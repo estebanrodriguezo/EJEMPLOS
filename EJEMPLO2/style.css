@@ -1,0 +1,111 @@
+*{
+    border: 1px solid red;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: Arial;
+    padding: 10px;
+    background-color: #DDD;
+}
+
+header{
+    padding: 30px;
+    background-color: #00A0A0;
+    background-image: url("./IMG/fondo.png");
+    text-align: center;
+}
+h1,header h2{
+    color: aliceblue;
+    font-size: 2em;
+    text-shadow: 3px 3px 3px black;
+}
+
+img{
+    display: block;
+    width: 30%;
+    box-shadow: 5px 5px 5px gray;
+    margin: auto;
+    border-radius: 10%;
+
+}
+img.circle{
+    border-radius: 50%;
+    width: 70%;
+    transition: 2s;
+}
+
+img.circle:hover{
+    
+    filter:sepia(100%) blur(1px);
+    transform: rotate(360deg) /*skew(20deg)*/;
+
+}
+
+section{
+    float: left;
+    width: 75%;
+}
+aside{
+    float: right;
+    width: 24%;
+}
+
+
+.float-4{
+    float: left;
+    width: 25%;
+}
+.float-3{
+    float: left;
+    width: 33%;
+}
+.float-2{
+    float: left;
+    width: 50%;
+}
+
+
+p:first-line{
+    font-weight: bold;
+    font-size: 1.2em;
+
+}
+p:first-letter{
+    font-size: 2em;
+}
+p:hover{
+    background-color: #b1e5ef;
+}
+
+nav li{
+    display:  inline-block;
+    background-color: #DDD;
+    list-style: none;
+    width: 200px;
+}
+nav li :hover{
+    font-size: 2em;
+    background-color: red;
+    font-weight: bold;
+    color: black;
+}
+.active{
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 700px){
+    p.float-3 {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px){
+    section{
+        width: 100%;
+        float: left;
+    }
+    aside{
+        width: 100%;
+        float: right;
+    }
+}

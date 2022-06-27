@@ -1,0 +1,112 @@
+* {
+  border: 1px;
+  box-sizing: border-box; /*importante*/
+  font-size: 1.03em;
+}
+header {
+  display: inline;
+  padding: 1em;
+}
+#logo {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.7em;
+  float: left;
+  width: 70%;
+  min-width: 150px;
+  background-color: black;
+  
+}
+h1 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: white;
+}
+#buscador {
+  float: right;
+  min-width: 150px;
+  margin-right: 0%;
+  margin-top: 7px;
+  
+}
+#buscador input{
+  background-color: rgba(128, 128, 128, 0.4);
+  border: 1px solid;
+}
+div.clear {
+  clear: both;
+}
+nav {
+  margin-top: -30px;
+  margin-bottom: -40px;
+}
+#menu_principal li {
+  margin-top: 2px;
+  display: inline;
+}
+
+section.lateral {
+  width: 15%;
+  float: left;
+  min-width: 150px;
+  margin-top: 55px;
+  background-color: rgba(0, 0, 0, 0.267);
+}
+h3 {
+  margin-top: -20px;
+  background-color: rgba(0, 0, 0, 0.626);
+  
+}
+a.link{
+  color: #DDD
+}
+ul {
+  margin-top: ;
+  margin-left: -40px;
+}
+
+aside.publicidad {
+  margin-top: 1px;
+}
+aside a{
+  color: black;
+}
+
+article.principal {
+  width: 72%;
+  float: left;
+  min-width: 150px;
+  margin-top: 2%;
+  margin-left: 5px;
+  background-color: rgba(0, 0, 0, 0.221);
+}
+
+
+
+img {
+  margin-top: -15px;
+  float: left;
+}
+#secundario {
+  width: 12%;
+  float: right;
+  min-width: 100px;
+  margin-top: 2%;
+  background-color: rgba(0, 0, 0, 0.221);
+  
+}
+ul {
+  list-style: none;
+}
+span.copyright {
+  float: right;
+}
+
+p {
+  margin-top: -15px;
+}
+
+body{
+  font-family: Arial;
+  padding: 10px;
+  background-color: #DDD;
+}
