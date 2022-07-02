@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box; /*importante*/
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: rgba(220, 220, 220, 0.434);
+  font-family: "Times New Roman", Times, serif;
+}
+img.circle {
+  display: block;
+  width: 8em;
+  box-shadow: 5px 5px 5px gray;
+  float: left;
+  margin: 8px;
+  border-radius: 50%;
+}
+
+#contenedor {
+  width: 80%;
+  background-color: antiquewhite;
+  margin: 0 auto;
+}
+
+header {
+  height: 20ch;
+  text-align: center;
+
+  text-shadow: 3px 3px 3px rgba(117, 113, 113, 0.467);
+  background-image: url("./IMG/fondo1.png");
+}
+#logo {
+  font-size: 0.6cm;
+}
+
+#Creador {
+  margin-top: 10px;
+  color: rgba(140, 141, 143, 0.741);
+}
+
+a {
+  text-decoration: none;
+}
+
+#navHeader ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin-top: 1.3cm;
+}
+
+#navHeader ul li {
+  display: inline;
+}
+
+#navHeader ul li a {
+  color: black;
+  padding: 10% 2%;
+  text-align: center;
+}
+
+#navHeader ul li a:hover {
+  background-color: #222;
+  color: white;
+  font-size: 1.4em;
+  font-weight: bold;
+}
