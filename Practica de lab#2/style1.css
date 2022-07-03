@@ -16,6 +16,10 @@ body {
 /*GENERAL*/
 
 /* INICIO */
+.contenido{
+  background-color: white;
+  height: 670px;
+}
 
 /* HEADER */
 img.circle {
@@ -244,6 +248,10 @@ progress[value]::-webkit-progress-bar {
 
 
 /* PRECIOS */
+.contenido3{
+  background-color:white;
+  height: 500px;
+}
 .contenido3 h2{
   text-align: center;
   margin-bottom: 20px;
@@ -257,7 +265,7 @@ progress[value]::-webkit-progress-bar {
   
 }
 .basico{
-  margin-left: 27.7%;
+  margin-left: 25%;
   
 }
 
@@ -272,7 +280,29 @@ progress[value]::-webkit-progress-bar {
   border-collapse:collapse;
 }
 tr, td, th{ 
-  border: 1px solid grey;
+  border-bottom: 1px solid rgba(129, 120, 120, 0.74);
+}
+#laterales{
+  background-color: black;
+  color: white;
+}
+#central{
+  background-color: rgb(42, 156, 141);
+  color: white;
+}
+td{
+  background-color: rgb(235, 237, 237);
 }
 
+#btn3 {
+  color: white;
+  background-color: rgb(42, 156, 141);
+  border-color: rgb(42, 156, 141);
+  border-radius: 4px  ;
+  padding: 5% 5%;
+  margin-left: -15%;
+}
+#btn3:hover {
+  color: rgb(42, 156, 141);
+  background-color: rgba(220, 220, 220, 0.434);
 /* PRECIOS */
