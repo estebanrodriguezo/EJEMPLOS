@@ -1,3 +1,4 @@
+/*GENERAL*/
 * {
   box-sizing: border-box; /*importante*/
   margin: 0%;
@@ -11,6 +12,12 @@ body {
   background-color: rgba(220, 220, 220, 0.434);
   font-family: "Times New Roman", Times, serif;
 }
+
+/*GENERAL*/
+
+/* INICIO */
+
+/* HEADER */
 img.circle {
   display: block;
   width: 8em;
@@ -67,148 +74,205 @@ a {
   color: white;
   font-size: 1.4em;
   font-weight: bold;
-  
 }
-
-section.lateral{
+/* HEADER */
+/* BARRA LATERAL IZQ */
+section.lateral {
   float: left;
   width: 13%;
   min-width: 150px;
   margin-top: 50px;
   margin-left: 10%;
 }
-#tituloE{
+#tituloE {
   text-align: center;
   margin-bottom: 10%;
-
 }
 
-article.principal{
+article.principal {
   float: left;
   width: 50%;
   min-width: 150px;
   margin-top: 30px;
   margin-left: 3%;
-
 }
 
-.articulo p{
-  text-align: justify;
-}
-
-#tituloP{
-  text-align: center;
-  margin-bottom: 2%;
-  font-size: 1cm;
-}
-
-#noticias{
+#noticias {
   float: left;
   width: 9%;
   min-width: 150px;
   margin-top: 30px;
   margin-left: 3%;
-
 }
 
-.link{
+.link {
   background-color: #222;
   color: white;
   font-weight: bold;
   padding: 1% 7%;
   border-radius: 4px;
 }
-p.infoEnlaces{
-  margin:20px;
+p.infoEnlaces {
+  margin: 20px;
   padding-bottom: 50px;
   border-bottom: 1px solid gray;
 }
-p.infoEnlacesf{
-  margin:20px;
+p.infoEnlacesf {
+  margin: 20px;
   padding-bottom: 50px;
 }
+/* BARRA LATERAL IZQ */
+/* INFO PRINCIPAL */
+.articulo p {
+  text-align: justify;
+}
 
-#titulosInt{
-  margin:10px;
+#tituloP {
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 1cm;
+}
+/* INFO PRINCIPAL */
+
+/* BARRA LATERAL DERECHA */
+#titulosInt {
+  margin: 10px;
   padding-bottom: 20px;
   border-bottom: 1px solid gray;
 }
-#titulosIntF{
-  margin:10px;
+#titulosIntF {
+  margin: 10px;
   padding-bottom: 10px;
-
 }
 
-#btn1{
+#btn1 {
   color: white;
   background-color: #222;
   border-radius: 4px;
   padding: 1% 2%;
 }
-#btn2{
+#btn2 {
   color: white;
   background-color: #222;
   border-radius: 4px;
   padding: 5% 5%;
 }
 
-#btn1:hover, #btn2:hover {
-  
+#btn1:hover,
+#btn2:hover {
   color: rgb(0, 0, 0);
   background-color: rgba(220, 220, 220, 0.434);
-  
+}
+/* BARRA LATERAL DERECHA */
+/* INICIO */
+
+
+/* INFORMACION DE PROYECTOS */
+.contenido2,
+.contenido3 {
+  margin-top: 80px;
 }
 
+/* HABILIDADES */
 
-
-#habilidades{
+#habilidades {
   float: left;
   width: 20%;
+  height: 380px;
   min-width: 150px;
   margin-top: 50px;
   margin-left: 15%;
   background-color: #fff;
-  
+  padding-top: 20px;
 }
-#habilidades h2{
+#habilidades h2 {
   text-align: center;
 }
-#habilidades h4{
-  margin:10px;
+#habilidades h4 {
+  margin: 10px;
   border-top: 1px solid gray;
-  padding-top:5%;
+  padding-top: 5%;
 }
-.file{
-  margin-bottom:10px;
-  padding-bottom: 20px;
-  padding: 1% 40%;
-  
+progress {
+  -webkit-appearance: none;
+  margin-left: 10px;
 }
-#infoProyectos{
+progress.file1::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, #fbff00, rgb(255, 128, 0));
+}
+progress.file::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, #2fff00, rgb(5, 138, 0));
+}
+
+progress[value]::-webkit-progress-bar {
+  width: 350px;
+  height: 15px;
+}
+/* HABILIDADES */
+
+/* INFO PROYECTOS */
+#infoProyectos {
   float: left;
   width: 40%;
-  height: 360px;
+  height: 380px;
   min-width: 150px;
   margin-top: 50px;
   margin-left: 10%;
   margin-right: 10%;
+  padding-top: 20px;
   background-color: #fff;
 }
-#infoProyectos h2{
+#infoProyectos h2 {
   text-align: center;
   margin-bottom: 3%;
 }
-.float-3{
+.float-3 {
   float: left;
   width: 33%;
   text-align: center;
 }
-.float-3 img{
-padding-bottom: 1%;
+.float-3 img {
+  padding-bottom: 1%;
+}
+.float-3 button {
+  padding-top: 10%;
+  margin: 15%;
+}
+/* INFO PROYECTOS */
+
+/* INFORMACION DE PROYECTOS */
+
+
+/* PRECIOS */
+.contenido3 h2{
+  text-align: center;
+  margin-bottom: 20px;
   
 }
-.float-3 button{
+.basico, .pro, .premium{
+  float: left;
+  text-align: center;
+  width: 15%;
+  margin-left: 3%;
   
-  padding-top: 10%;
-  margin: 15%;   
-  }
+}
+.basico{
+  margin-left: 27.7%;
+  
+}
+
+.color1{
+  width: 80%;
+  height: 300px;
+  border-collapse:collapse;
+}
+.color2{
+  width: 80%;
+  height: 300px;
+  border-collapse:collapse;
+}
+tr, td, th{ 
+  border: 1px solid grey;
+}
+
+/* PRECIOS */
