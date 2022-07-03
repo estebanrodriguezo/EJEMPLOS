@@ -91,14 +91,20 @@ article.principal{
   margin-left: 3%;
 
 }
+
+.articulo p{
+  text-align: justify;
+}
+
 #tituloP{
   text-align: center;
   margin-bottom: 2%;
+  font-size: 1cm;
 }
 
 #noticias{
   float: left;
-  width: 13%;
+  width: 9%;
   min-width: 150px;
   margin-top: 30px;
   margin-left: 3%;
@@ -117,3 +123,92 @@ p.infoEnlaces{
   padding-bottom: 50px;
   border-bottom: 1px solid gray;
 }
+p.infoEnlacesf{
+  margin:20px;
+  padding-bottom: 50px;
+}
+
+#titulosInt{
+  margin:10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+#titulosIntF{
+  margin:10px;
+  padding-bottom: 10px;
+
+}
+
+#btn1{
+  color: white;
+  background-color: #222;
+  border-radius: 4px;
+  padding: 1% 2%;
+}
+#btn2{
+  color: white;
+  background-color: #222;
+  border-radius: 4px;
+  padding: 5% 5%;
+}
+
+#btn1:hover, #btn2:hover {
+  
+  color: rgb(0, 0, 0);
+  background-color: rgba(220, 220, 220, 0.434);
+  
+}
+
+
+
+#habilidades{
+  float: left;
+  width: 20%;
+  min-width: 150px;
+  margin-top: 50px;
+  margin-left: 15%;
+  background-color: #fff;
+  
+}
+#habilidades h2{
+  text-align: center;
+}
+#habilidades h4{
+  margin:10px;
+  border-top: 1px solid gray;
+  padding-top:5%;
+}
+.file{
+  margin-bottom:10px;
+  padding-bottom: 20px;
+  padding: 1% 40%;
+  
+}
+#infoProyectos{
+  float: left;
+  width: 40%;
+  height: 360px;
+  min-width: 150px;
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #fff;
+}
+#infoProyectos h2{
+  text-align: center;
+  margin-bottom: 3%;
+}
+.float-3{
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+.float-3 img{
+padding-bottom: 1%;
+  
+}
+.float-3 button{
+  
+  padding-top: 10%;
+  margin: 15%;   
+  }
