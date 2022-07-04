@@ -3,6 +3,7 @@
   box-sizing: border-box; /*importante*/
   margin: 0%;
   padding: 0%;
+  
 }
 div.clear {
   clear: both;
@@ -16,10 +17,6 @@ body {
 /*GENERAL*/
 
 /* INICIO */
-.contenido {
-  background-color: white;
-  height: 670px;
-}
 
 /* HEADER */
 img.circle {
@@ -80,6 +77,11 @@ a {
   font-weight: bold;
 }
 /* HEADER */
+.contenido {
+  background-color: white;
+  padding-bottom: 1%;
+  float: left;
+}
 /* BARRA LATERAL IZQ */
 section.lateral {
   float: left;
@@ -101,11 +103,11 @@ article.principal {
   margin-left: 3%;
 }
 
-#noticias {
+.noticias {
   float: left;
   width: 9%;
   min-width: 150px;
-  margin-top: 30px;
+  margin-top: 70px;
   margin-left: 3%;
 }
 
@@ -127,7 +129,7 @@ p.infoEnlacesf {
 }
 /* BARRA LATERAL IZQ */
 /* INFO PRINCIPAL */
-.articulo p {
+.principal p {
   text-align: justify;
 }
 
@@ -169,13 +171,11 @@ p.infoEnlacesf {
 }
 /* BARRA LATERAL DERECHA */
 /* INICIO */
-
 /* INFORMACION DE PROYECTOS */
-.contenido2,
-.contenido3 {
-  margin-top: 80px;
+.contenido2 {
+  float: left;
+  padding-bottom: 3%;
 }
-
 /* HABILIDADES */
 
 #habilidades {
@@ -247,8 +247,11 @@ progress[value]::-webkit-progress-bar {
 
 /* PRECIOS */
 .contenido3 {
+  float: left;
+  width: 100%;
   background-color: white;
-  height: 500px;
+  padding-bottom: 3%;
+  padding-top: 3%;
 }
 .contenido3 h2 {
   text-align: center;
@@ -263,16 +266,18 @@ progress[value]::-webkit-progress-bar {
   margin-left: 3%;
 }
 .basico {
-  margin-left: 26%;
+  margin-left: 24.4%;
+
 }
 
 .color1 {
-  width: 80%;
+  width: 100%;
   height: 300px;
   border-collapse: collapse;
+ 
 }
 .color2 {
-  width: 80%;
+  width: 100%;
   height: 300px;
   border-collapse: collapse;
 }
@@ -283,7 +288,6 @@ th {
 }
 #laterales {
   background-color: rgb(69, 69, 69);
-
   color: white;
 }
 #central {
@@ -300,7 +304,6 @@ td {
   border-color: rgb(42, 156, 141);
   border-radius: 4px;
   padding: 5% 5%;
-  margin-left: -15%;
 }
 #btn3:hover {
   color: rgb(42, 156, 141);
@@ -309,7 +312,8 @@ td {
 /* PRECIOS */
 
 /* INFORMACION DE CONTACTO */
-.contenido4{
+.contenido4 {
+  padding-top: 3%;
   padding-bottom: 4%;
 }
 /* TABLA DE NUESTRO CONTACTO */
@@ -331,6 +335,8 @@ td {
 }
 #cent {
   background-color: rgb(42, 156, 141);
+  
+  
   color: white;
 }
 
@@ -348,7 +354,6 @@ td {
 
 #name {
   width: 50%;
-  
 }
 #email {
   width: 50%;
@@ -362,7 +367,6 @@ td {
   border-color: rgb(69, 69, 69);
   border-radius: 4px;
   padding: 1% 2%;
-
 }
 #btn4:hover {
   color: black;
