@@ -16,7 +16,7 @@ body {
 /*GENERAL*/
 
 /* INICIO */
-.contenido{
+.contenido {
   background-color: white;
   height: 670px;
 }
@@ -170,7 +170,6 @@ p.infoEnlacesf {
 /* BARRA LATERAL DERECHA */
 /* INICIO */
 
-
 /* INFORMACION DE PROYECTOS */
 .contenido2,
 .contenido3 {
@@ -209,7 +208,7 @@ progress.file::-webkit-progress-value {
 }
 
 progress[value]::-webkit-progress-bar {
-  width: 350px;
+  width: 180%;
   height: 15px;
 }
 /* HABILIDADES */
@@ -246,51 +245,52 @@ progress[value]::-webkit-progress-bar {
 
 /* INFORMACION DE PROYECTOS */
 
-
 /* PRECIOS */
-.contenido3{
-  background-color:white;
+.contenido3 {
+  background-color: white;
   height: 500px;
 }
-.contenido3 h2{
+.contenido3 h2 {
   text-align: center;
   margin-bottom: 20px;
-  
 }
-.basico, .pro, .premium{
+.basico,
+.pro,
+.premium {
   float: left;
   text-align: center;
   width: 15%;
   margin-left: 3%;
-  
 }
-.basico{
-  margin-left: 25%;
-  
+.basico {
+  margin-left: 26%;
 }
 
-.color1{
+.color1 {
   width: 80%;
   height: 300px;
-  border-collapse:collapse;
+  border-collapse: collapse;
 }
-.color2{
+.color2 {
   width: 80%;
   height: 300px;
-  border-collapse:collapse;
+  border-collapse: collapse;
 }
-tr, td, th{ 
+tr,
+td,
+th {
   border-bottom: 1px solid rgba(129, 120, 120, 0.74);
 }
-#laterales{
-  background-color: black;
+#laterales {
+  background-color: rgb(69, 69, 69);
+
   color: white;
 }
-#central{
+#central {
   background-color: rgb(42, 156, 141);
   color: white;
 }
-td{
+td {
   background-color: rgb(235, 237, 237);
 }
 
@@ -298,11 +298,77 @@ td{
   color: white;
   background-color: rgb(42, 156, 141);
   border-color: rgb(42, 156, 141);
-  border-radius: 4px  ;
+  border-radius: 4px;
   padding: 5% 5%;
   margin-left: -15%;
 }
 #btn3:hover {
   color: rgb(42, 156, 141);
   background-color: rgba(220, 220, 220, 0.434);
+}
 /* PRECIOS */
+
+/* INFORMACION DE CONTACTO */
+.contenido4{
+  padding-bottom: 4%;
+}
+/* TABLA DE NUESTRO CONTACTO */
+
+.contacto {
+  width: 50%;
+  margin-top: 1%;
+  margin-left: 25%;
+  margin-bottom: 2%;
+  padding-bottom: 1%;
+  border-bottom: 1px solid rgba(129, 120, 120, 0.74);
+}
+.contacto img {
+  width: 10%;
+}
+#lat {
+  background-color: rgb(69, 69, 69);
+  color: white;
+}
+#cent {
+  background-color: rgb(42, 156, 141);
+  color: white;
+}
+
+/* TABLA DE NUESTRO CONTACTO */
+
+/* FORMULARIO DE ATENCION */
+
+#contactanos {
+  width: 100%;
+  margin-left: 25%;
+}
+#contactanos label {
+  color: rgba(129, 120, 120, 0.74);
+}
+
+#name {
+  width: 50%;
+  
+}
+#email {
+  width: 50%;
+}
+#mensaje {
+  width: 50%;
+}
+#btn4 {
+  color: white;
+  background-color: rgb(69, 69, 69);
+  border-color: rgb(69, 69, 69);
+  border-radius: 4px;
+  padding: 1% 2%;
+
+}
+#btn4:hover {
+  color: black;
+  background-color: rgba(220, 220, 220, 0.434);
+}
+
+/* FORMULARIO DE ATENCION */
+
+/* INFORMACION DE CONTACTO */

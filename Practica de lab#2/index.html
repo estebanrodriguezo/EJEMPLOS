@@ -290,36 +290,31 @@
     <!--Contenido Informacion de contacto-->
     <section class="contenido4">
         <div id="infoContact">
-            <!--Lista de nuestra informacion-->
-            <ul>
-                <li>
-                    <figure>Correo <br><img src="./IMG/correo.png"></figure>
-                </li>
-                <li>
-                    <figure>Ubicacion <br><img src="./IMG/ubicacion.png"></figure>
-                </li>
-                <li>
-                    <figure>Telefono <br><img src="./IMG/telefono.png"></figure>
-                </li>
+            <!--Tabla de nuestra informacion-->
+            <table class="contacto">
 
-            </ul>
-            <!--Lista de nuestra informacion-->
+                <tr>
+                    <th id="lat"><figure><img src="./IMG/correo.png"><br> esteban52999@gmail.com </figure></th>
+                    <th id="cent"><figure><img src="./IMG/ubicacion.png"> <br> Medellin, Colombia</figure></th>
+                    <th id="lat"><figure><img src="./IMG/telefono.png"> <br> 3182123263</figure></th>
+                </tr>
+            </table> 
+            <!--Tabla de nuestra informacion-->
 
         </div>
 
-        <div id="caontactanos">
+        <div id="contactanos">
             <!--Formulario para contactarnos-->
             <form name="Registro" id="Registro" method="get">
 
-                <label>Nombre</label>
-                <input type="text" name="name" id="name" placeholder="Ingrese su nombre completo" /><br /><br />
-                <label>Correo</label>
-                <input type="email" name="email" id="email" placeholder="Ingrese su email" /><br /><br />
-                <label>Mensaje</label>
-                <input type="text" name="mensaje" id="mensaje" placeholder="Escriba su mensaje" /><br /><br />
+                <label>Nombre</label><br>
+                <input type="text" name="name" id="name" /><br /><br />
+                <label>Correo</label><br>
+                <input type="email" name="email" id="email"/><br /><br />
+                <label>Mensaje</label><br>
+                <input type="text" name="mensaje" id="mensaje"/><br /><br />
 
-                <input type="submit" value="Enviar mensaje" />
-                <input type="reset" value="Limpiar" /><br />
+                <input type="submit" value="ENVIAR MENSAJE" id="btn4"/>
                 <!--Botones para el registro y limpieza del formulario-->
             </form>
             <!--Formulario para contactarnos-->
