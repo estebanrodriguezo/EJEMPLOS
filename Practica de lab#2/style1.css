@@ -3,7 +3,6 @@
   box-sizing: border-box; /*importante*/
   margin: 0%;
   padding: 0%;
-  
 }
 div.clear {
   clear: both;
@@ -12,6 +11,7 @@ div.clear {
 body {
   background-color: rgba(220, 220, 220, 0.434);
   font-family: "Times New Roman", Times, serif;
+  min-width: 300px;
 }
 
 /*GENERAL*/
@@ -21,11 +21,12 @@ body {
 /* HEADER */
 img.circle {
   display: block;
-  width: 8em;
+  width: 3em;
   box-shadow: 5px 5px 5px gray;
   float: left;
   margin: 8px;
   border-radius: 50%;
+  min-width: 9em;
 }
 
 #contenedor {
@@ -35,9 +36,7 @@ img.circle {
 }
 
 header {
-  height: 20ch;
   text-align: center;
-
   text-shadow: 3px 3px 3px rgba(117, 113, 113, 0.467);
   background-image: url("./IMG/fondo1.png");
 }
@@ -58,24 +57,72 @@ a {
   list-style-type: none;
   overflow: hidden;
   margin-top: 1.3cm;
+  border-radius: 10px;
 }
 
-#navHeader ul li {
+#navHeader li {
   display: inline;
 }
 
-#navHeader ul li a {
+#navHeader a {
   color: black;
-  padding: 10% 2%;
+  padding: 2% 2%;
   text-align: center;
 }
 
-#navHeader ul li a:hover {
+#navHeader a:hover {
   background-color: #222;
   color: white;
-  font-size: 1.4em;
   font-weight: bold;
 }
+
+#check-menu,
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  img.circle {
+    width: 70%;
+    margin-left: 13%;
+  }
+
+  #check-menu:checked ~ nav {
+    display: block;
+  }
+
+  #navHeader li {
+    display: block;
+    background-color: rgba(234, 234, 234, 0.851);
+  }
+
+  nav {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 24px;
+    transition: 1s;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+
+  .img-menu {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+  }
+
+  .img-menu:hover {
+    cursor: pointer;
+    transform: skew(0deg);
+  }
+}
+
 /* HEADER */
 .contenido {
   background-color: white;
@@ -93,6 +140,7 @@ section.lateral {
 #tituloE {
   text-align: center;
   margin-bottom: 10%;
+  min-width: 100%;
 }
 
 article.principal {
@@ -131,6 +179,10 @@ p.infoEnlacesf {
 /* INFO PRINCIPAL */
 .principal p {
   text-align: justify;
+  min-width: 100%;
+}
+.principal p:first-letter {
+  font-size: 2em;
 }
 
 #tituloP {
@@ -181,12 +233,12 @@ p.infoEnlacesf {
 #habilidades {
   float: left;
   width: 20%;
-  height: 380px;
-  min-width: 150px;
+  min-width: 310px;
   margin-top: 50px;
   margin-left: 15%;
   background-color: #fff;
   padding-top: 20px;
+  padding-bottom: 25px;
 }
 #habilidades h2 {
   text-align: center;
@@ -217,8 +269,7 @@ progress[value]::-webkit-progress-bar {
 #infoProyectos {
   float: left;
   width: 40%;
-  height: 380px;
-  min-width: 150px;
+  min-width: 400px;
   margin-top: 50px;
   margin-left: 10%;
   margin-right: 10%;
@@ -267,14 +318,12 @@ progress[value]::-webkit-progress-bar {
 }
 .basico {
   margin-left: 24.4%;
-
 }
 
 .color1 {
   width: 100%;
   height: 300px;
   border-collapse: collapse;
- 
 }
 .color2 {
   width: 100%;
@@ -335,8 +384,7 @@ td {
 }
 #cent {
   background-color: rgb(42, 156, 141);
-  
-  
+
   color: white;
 }
 

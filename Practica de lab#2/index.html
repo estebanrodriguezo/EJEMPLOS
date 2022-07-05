@@ -28,15 +28,16 @@
             <div id="Creador">
                 <h4><span>DISEÑADO POR: ESTEBAN RODRIGUEZ ORDOÑEZ</span></h4>
             </div>
-
+            <input type="checkbox" id="check-menu">
+            <label class="menu" for="check-menu"><img src="./icon/menu.png" class="img-menu"></label>
             <!-- Menu principal -->
             <nav id="navHeader">
                 <ul>
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">HOMBRE</a></li>
-                    <li><a href="#">MUJER </a></li>
-                    <li><a href="#">MARCAS </a></li>
-                    <li><a href="#">ACERCA DE NOSOTROS</a></li>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#habilidades">HABILIDADES</a></li>
+                    <li><a href="#infop">PROYECTOS </a></li>
+                    <li><a href="#precios">PRECIOS </a></li>
+                    <li><a href="#infoc">ACERCA DE NOSOTROS</a></li>
                 </ul>
                 <div class="clear"></div>
             </nav>
@@ -45,40 +46,42 @@
         </header>
         <!-- /Cabecera -->
     </div>
-    
+    <!-- Contenedor -->
+
     <br>
     <div class="clear"></div>
 
+    <!-- /Contenido -->
 
     <section class="contenido">
-       <!-- Lateral -->
-       <section class="lateral">
+        <!-- Lateral -->
+        <section class="lateral">
 
-        <!-- Enlaces -->
-        <aside class="enlaces">
+            <!-- Enlaces -->
+            <aside class="enlaces">
 
-            <H2 id="tituloE">ENLACES</H2>
+                <H2 id="tituloE">ENLACES</H2>
 
-            <h3><a class="link" href="#">[TIULO ENLACE 1]</a></h3>
-            <p class="infoEnlaces"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore.</span>
-            </p>
+                <h3><a class="link" href="#">[TIULO ENLACE 1]</a></h3>
+                <p class="infoEnlaces"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore.</span>
+                </p>
 
-            <h3><a class="link" href="#">[TIULO ENLACE 2]</a></h3>
-            <p class="infoEnlaces"> <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Inventore.</span> </p>
+                <h3><a class="link" href="#">[TIULO ENLACE 2]</a></h3>
+                <p class="infoEnlaces"> <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Inventore.</span> </p>
 
-            <h3><a class="link" href="#">[TIULO ENLACE 3]</a></h3>
-            <p class="infoEnlacesf"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Inventore.</span> </p>
-        </aside>
-        <!-- /Enlaces -->
+                <h3><a class="link" href="#">[TIULO ENLACE 3]</a></h3>
+                <p class="infoEnlacesf"><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Inventore.</span> </p>
+            </aside>
+            <!-- /Enlaces -->
         </section>
-    <!-- /Lateral -->
+        <!-- /Lateral -->
 
-    <!-- Principal -->
-    <article class="principal">
+        <!-- Principal -->
+        <article class="principal">
 
-        
+            <a name="inicio" />
             <h1 id="tituloP">[TITULO PRINCIPAL]</h1>
 
 
@@ -122,28 +125,28 @@
                 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3 parrafo3.</p><br>
 
             <a href="#"><button id="btn1">SEGUIR LEYENDO</button></a>
-        
 
-    </article>
-    <!-- /Principal -->
 
-    
-    <!-- Noticias -->
-    <article class="noticias">
-        <h2>NOTICIAS</h2>
-        <h4 id="titulosInt">[Titulo de interes 1]</h4>
-        <h4 id="titulosInt">[Titulo de interes 2]</h4>
-        <h4 id="titulosInt">[Titulo de interes 3]</h4>
-        <h4 id="titulosInt">[Titulo de interes 4]</h4>
-        <h4 id="titulosInt">[Titulo de interes 5]</h4>
-        <h4 id="titulosInt">[Titulo de interes 6]</h4>
-        <h4 id="titulosIntF">[Titulo de interes 7]</h4>
-        <br>
-        <a href="#"><button id="btn2">MAS INFORMACION</button></a>
-    </article>
-    <!-- /Noticias -->
+        </article>
+        <!-- /Principal -->
 
-        
+
+        <!-- Noticias -->
+        <article class="noticias">
+            <h2>NOTICIAS</h2>
+            <h4 id="titulosInt">[Titulo de interes 1]</h4>
+            <h4 id="titulosInt">[Titulo de interes 2]</h4>
+            <h4 id="titulosInt">[Titulo de interes 3]</h4>
+            <h4 id="titulosInt">[Titulo de interes 4]</h4>
+            <h4 id="titulosInt">[Titulo de interes 5]</h4>
+            <h4 id="titulosInt">[Titulo de interes 6]</h4>
+            <h4 id="titulosIntF">[Titulo de interes 7]</h4>
+            <br>
+            <a href="#"><button id="btn2">MAS INFORMACION</button></a>
+        </article>
+        <!-- /Noticias -->
+
+
     </section>
     <!-- /Contenido -->
     <br>
@@ -158,34 +161,44 @@
     <section class="contenido2">
 
         <article id="habilidades">
+            <a name="habilidades" />
             <h2>HABILIDADES</h2>
 
-            
-            <label ><h4>Programacion de dispositivos digitales</h4></label>
+            <label>
+                <h4>Programacion de dispositivos digitales</h4>
+            </label>
             <progress class="file1" max="100" value="40"> 40% </progress>
 
-            <label ><h4>Electronica potencial</h4></label>
+            <label>
+                <h4>Electronica potencial</h4>
+            </label>
             <progress class="file" max="100" value="80"> 80% </progress>
-        
-            
-            <label ><h4>Telecomunicaciones</h4></label>
+
+
+            <label>
+                <h4>Telecomunicaciones</h4>
+            </label>
             <progress class="file1" max="100" value="60"> 60% </progress>
-            
-            <label ><h4>[Super habilidad]</h4></label>
+
+            <label>
+                <h4>[Super habilidad]</h4>
+            </label>
             <progress class="file" max="100" value="100"> 100% </progress>
-            
+
             <br>
         </article>
 
         <aside id="infoProyectos">
+            <a name="infop" />
             <h2>INFORMACION DE LOS PROYECTOS</h2>
+
             <div class="float-3">
 
                 <img src="./IMG/imagen.png" />
 
                 <p>Parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1
                     parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1.</p>
-                    <a href="#"><button id="btn2">MAS INFORMACION</button></a>
+                <a href="#"><button id="btn2">MAS INFORMACION</button></a>
             </div>
 
             <div class="float-3">
@@ -194,8 +207,8 @@
 
                 <p>Parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1
                     parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1 parrafo1..</p>
-                    
-                    <a href="#"><button id="btn2">MAS INFORMACION</button></a>
+
+                <a href="#"><button id="btn2">MAS INFORMACION</button></a>
             </div>
 
             <div class="float-3">
@@ -217,7 +230,9 @@
 
     <!-- /Contenido Precios -->
     <section class="contenido3">
+        <a name="precios" />
         <h2>LISTA DE PRECIOS</h2> <br>
+
         <!-- Tablas de precios ofrecidos-->
         <div class="basico">
             <table class="color1">
@@ -305,15 +320,22 @@
     <!--Contenido Informacion de contacto-->
     <section class="contenido4">
         <div id="infoContact">
+            <a name="infoc" />
             <!--Tabla de nuestra informacion-->
             <table class="contacto">
 
                 <tr>
-                    <th id="lat"><figure><img src="./IMG/correo.png"><br> esteban52999@gmail.com </figure></th>
-                    <th id="cent"><figure><img src="./IMG/ubicacion.png"> <br> Medellin, Colombia</figure></th>
-                    <th id="lat"><figure><img src="./IMG/telefono.png"> <br> 3182123263</figure></th>
+                    <th id="lat">
+                        <figure><img src="./IMG/correo.png"><br> esteban52999@gmail.com </figure>
+                    </th>
+                    <th id="cent">
+                        <figure><img src="./IMG/ubicacion.png"> <br> Medellin, Colombia</figure>
+                    </th>
+                    <th id="lat">
+                        <figure><img src="./IMG/telefono.png"> <br> 3182123263</figure>
+                    </th>
                 </tr>
-            </table> 
+            </table>
             <!--Tabla de nuestra informacion-->
 
         </div>
@@ -325,11 +347,11 @@
                 <label>Nombre</label><br>
                 <input type="text" name="name" id="name" /><br /><br />
                 <label>Correo</label><br>
-                <input type="email" name="email" id="email"/><br /><br />
+                <input type="email" name="email" id="email" /><br /><br />
                 <label>Mensaje</label><br>
-                <input type="text" name="mensaje" id="mensaje"/><br /><br />
+                <input type="text" name="mensaje" id="mensaje" /><br /><br />
 
-                <input type="submit" value="ENVIAR MENSAJE" id="btn4"/>
+                <input type="submit" value="ENVIAR MENSAJE" id="btn4" />
                 <!--Botones para el registro y limpieza del formulario-->
             </form>
             <!--Formulario para contactarnos-->
