@@ -3,15 +3,21 @@
   box-sizing: border-box; /*importante*/
   margin: 0%;
   padding: 0%;
+  
+
 }
 div.clear {
   clear: both;
 }
 
 body {
+  
   background-color: rgba(220, 220, 220, 0.434);
   font-family: "Times New Roman", Times, serif;
-  min-width: 300px;
+  width: 100%;
+
+  border: 1px solid;
+  
 }
 
 /*GENERAL*/
@@ -125,6 +131,7 @@ a {
 
 /* HEADER */
 .contenido {
+  width: 100%;
   background-color: white;
   padding-bottom: 1%;
   float: left;
@@ -133,7 +140,7 @@ a {
 section.lateral {
   float: left;
   width: 13%;
-  min-width: 150px;
+  min-width: 200px;
   margin-top: 50px;
   margin-left: 10%;
 }
@@ -146,7 +153,7 @@ section.lateral {
 article.principal {
   float: left;
   width: 50%;
-  min-width: 150px;
+  
   margin-top: 30px;
   margin-left: 3%;
 }
@@ -175,11 +182,34 @@ p.infoEnlacesf {
   margin: 20px;
   padding-bottom: 50px;
 }
+
+@media screen and (max-width: /* 557 */700px) {
+
+  section.lateral{
+    width: 80%;
+    margin-left: 15%;
+  }
+  article.principal, article.noticias{
+    width: 95%;
+  }
+  
+}
+@media screen and (max-width: 1100px) {
+
+  article.noticias{
+    width: 95%;
+  }
+  button#btn2{
+    padding: 1% 1%;
+  }
+  
+}
+
+
 /* BARRA LATERAL IZQ */
 /* INFO PRINCIPAL */
 .principal p {
   text-align: justify;
-  min-width: 100%;
 }
 .principal p:first-letter {
   font-size: 2em;
