@@ -3,21 +3,17 @@
   box-sizing: border-box; /*importante*/
   margin: 0%;
   padding: 0%;
-  
-
 }
 div.clear {
   clear: both;
 }
 
 body {
-  
   background-color: rgba(220, 220, 220, 0.434);
   font-family: "Times New Roman", Times, serif;
   width: 100%;
 
   border: 1px solid;
-  
 }
 
 /*GENERAL*/
@@ -153,7 +149,7 @@ section.lateral {
 article.principal {
   float: left;
   width: 50%;
-  
+
   margin-top: 30px;
   margin-left: 3%;
 }
@@ -184,27 +180,23 @@ p.infoEnlacesf {
 }
 
 @media screen and (max-width: /* 557 */700px) {
-
-  section.lateral{
+  section.lateral {
     width: 80%;
     margin-left: 15%;
   }
-  article.principal, article.noticias{
+  article.principal,
+  article.noticias {
     width: 95%;
   }
-  
 }
 @media screen and (max-width: 1100px) {
-
-  article.noticias{
+  article.noticias {
     width: 95%;
   }
-  button#btn2{
+  button#btn2 {
     padding: 1% 1%;
   }
-  
 }
-
 
 /* BARRA LATERAL IZQ */
 /* INFO PRINCIPAL */
@@ -251,6 +243,7 @@ p.infoEnlacesf {
   color: rgb(0, 0, 0);
   background-color: rgba(220, 220, 220, 0.434);
 }
+
 /* BARRA LATERAL DERECHA */
 /* INICIO */
 /* INFORMACION DE PROYECTOS */
@@ -293,16 +286,15 @@ progress[value]::-webkit-progress-bar {
   width: 180%;
   height: 15px;
 }
+
 /* HABILIDADES */
 
 /* INFO PROYECTOS */
 #infoProyectos {
   float: left;
   width: 40%;
-  min-width: 400px;
   margin-top: 50px;
   margin-left: 10%;
-  margin-right: 10%;
   padding-top: 20px;
   background-color: #fff;
 }
@@ -324,6 +316,27 @@ progress[value]::-webkit-progress-bar {
 }
 /* INFO PROYECTOS */
 
+@media screen and (max-width: 1257px) {
+  article#habilidades,
+  aside#infoProyectos {
+    width: 85%;
+    margin-left: 8%;
+  }
+  progress {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  div.float-3 {
+    width: 100%;
+    text-align: justify;
+    margin-left: 5%;
+  }
+  div.float-3 p {
+    width: 90%;
+  }
+}
+
 /* INFORMACION DE PROYECTOS */
 
 /* PRECIOS */
@@ -343,11 +356,12 @@ progress[value]::-webkit-progress-bar {
 .premium {
   float: left;
   text-align: center;
-  width: 15%;
+  width: 20%;
+  min-width: 250px;
   margin-left: 3%;
 }
 .basico {
-  margin-left: 24.4%;
+  margin-left: 17%;
 }
 
 .color1 {
@@ -388,12 +402,29 @@ td {
   color: rgb(42, 156, 141);
   background-color: rgba(220, 220, 220, 0.434);
 }
+@media screen and (max-width: 1257px) {
+  div.basico, div.pro, div.premium{
+    width: 65%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+  }
+  button#btn3{
+    padding: 2% 10%;
+  }
+  section.contenido3 h2{
+    margin-left: 7%;
+  }
+}
 /* PRECIOS */
 
 /* INFORMACION DE CONTACTO */
 .contenido4 {
   padding-top: 3%;
   padding-bottom: 4%;
+}
+.contenido4 h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 /* TABLA DE NUESTRO CONTACTO */
 
@@ -402,20 +433,27 @@ td {
   margin-top: 1%;
   margin-left: 25%;
   margin-bottom: 2%;
-  padding-bottom: 1%;
+  padding: 1%;
   border-bottom: 1px solid rgba(129, 120, 120, 0.74);
+  
 }
 .contacto img {
   width: 10%;
+  min-width: 25px;
+  
 }
 #lat {
+  width: 33%;
   background-color: rgb(69, 69, 69);
   color: white;
 }
 #cent {
-  background-color: rgb(42, 156, 141);
 
+  width: 33%;
+  background-color: rgb(42, 156, 141);
   color: white;
+
+
 }
 
 /* TABLA DE NUESTRO CONTACTO */
@@ -449,6 +487,13 @@ td {
 #btn4:hover {
   color: black;
   background-color: rgba(220, 220, 220, 0.434);
+}
+
+@media screen and (max-width: 1257px) {
+ 
+ 
+
+
 }
 
 /* FORMULARIO DE ATENCION */
