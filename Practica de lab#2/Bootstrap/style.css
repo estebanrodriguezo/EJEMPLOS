@@ -7,6 +7,10 @@
     margin-left: 50%;
     float: right;
 }
+ .icon{
+    width: 20%;
+    float: left;
+ }
 
 .navbar {
   margin-bottom: 0%;
@@ -15,6 +19,7 @@
 }
 
 .jumbotron {
+    margin-top: 3.1%;
   width: 100%;
   float: left;
   background-color: rgb(245, 245, 245);
@@ -26,6 +31,7 @@
 }
 .logo img {
   width: 40%;
+  min-width: 400px;
 }
 .jumbotron button {
   width: 14%;
@@ -36,3 +42,20 @@
 }
 
 /* HEADER */
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(1, 69, 1);
+}
+
+.iconsm{
+    width: 30px;
+    border-radius: 50%;
+ }
+ .btn{
+    border: transparent;
+ }
+/* FOOTER */

@@ -30,126 +30,126 @@
 
 <body>
 
-<div class="container">
-    <!-- Cabecera -->
-    <header>
-
-        <!-- Menu de navegacion -->
-        <nav class="navbar fixed-top navbar-expand-md navbar-dark ">
-            <a href="./inicio.html" class="navbar-brand">UdeA</a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span
-                    class="navbar-toggler-icon"></span></button>
-        <div id="menu" class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-                <li class="nav-item active"><a class="nav-link" href="#">INICIO</a></li>
-                <li><a class="nav-link" href="#">UNIVERSIDAD</a></li>
-                <li><a class="nav-link" href="#">FACULTAD DE INGENIERIA </a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">INGRESAR</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="">INICIAR SESION</a>
-                        <a class="dropdown-item" href="">REGISTRARSE</a>
-                    </div>
-                </li>
-            </ul>
-
-            <form action="./inicio.html" class="form-inline">
-                    <input class="form-control" type="search" name="buscar" placeholder="Buscar">
-                    <button class="btn btn-success" type="submit">Buscar</button>
-                </form>
-            
-        </div>
-        </nav>
-
-        <div class="clear"></div>
-    
-    </header>
-    <!-- /Cabecera -->
-</div>
-
-
-<!-- Jumbotron -->
-<section class="jumbotron">
     <div class="container">
-    <div class="logo">
-        <img src="./IMG/logo.png" class="circle" />
+        <!-- Cabecera -->
+        <header>
+
+            <!-- Menu de navegacion -->
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark ">
+                <a href="./inicio.html" class="navbar-brand">UdeA</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div id="menu" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link" href="#">INICIO</a></li>
+                        <li><a class="nav-link" href="#">UNIVERSIDAD</a></li>
+                        <li><a class="nav-link" href="#">FACULTAD DE INGENIERIA </a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">INGRESAR</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="">INICIAR SESION</a>
+                                <a class="dropdown-item" href="">REGISTRARSE</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <form action="./inicio.html" class="form-inline">
+                        <input class="form-control" type="search" name="buscar" placeholder="Buscar">
+                        <button class="btn btn-success" type="submit">Buscar</button>
+                    </form>
+
+                </div>
+            </nav>
+
+            <div class="clear"></div>
+
+        </header>
+        <!-- /Cabecera -->
     </div>
-    
-    <button class="btn btn-primary" type="button" data-toggle="modal"
-            data-target="#modal_info">INGRESAR</button>
+
+
+    <!-- Jumbotron -->
+    <section class="jumbotron">
+        <div class="container">
+            <div class="logo">
+                <img src="./IMG/logo.png" class="circle" />
+            </div>
+
+            <button class="btn btn-primary " type="button" data-toggle="modal" data-target="#modal_info"><img
+                    src="./iconos/person.png" class="icon " />INGRESAR</button>
         </div>
-</section>
-<!-- Jumbotron -->
+    </section>
+    <!-- Jumbotron -->
 
 
 
 
-<!-- ventana emergente ingresar -->
-<div class="modal fade" id="modal_info">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <!-- header -->
-            <div class="modal-header">
-                <h4 class="modal-title">INICIAR SESION / REGISTRARSE</h4>
-                <button class="close" data-dismiss="modal">&times;</button>
-            </div>
+    <!-- ventana emergente ingresar -->
+    <div class="modal fade" id="modal_info">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">INICIAR SESION / REGISTRARSE</h4>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
 
-            <!-- body -->
-            <div class="modal-body">
-                <form>
-                    <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">Usuario:</label>
-                        <input type="text" name="user" class="form-control col-sm-6" placeholder="Ingrese su Nickname">
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">Password: </label>
-                        <input type="password" name="pass" class="form-control col-sm-6">
-                    </div>
-                    <div class="form-group row">
-                    <button class="btn btn-primary col-sm-6">Iniciar sesion</button>
-                    </div>
-                </form>
-                <br>
-                <form>
-                    <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">Nombre:</label>
-                        <input type="text" name="user" class="form-control col-sm-6" placeholder="Ingrese su nombre completo">
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">Nickname:</label>
-                        <input type="text" name="Nickname" class="form-control col-sm-6">
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">Correo:</label>
-                        <input type="email" name="email" class="form-control col-sm-6">
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-sm-3 col-form-label">Password: </label>
-                        <input type="password" name="pass" class="form-control col-sm-6">
-                    </div>
-                    
-                    <div class="form-group row">
-                    <button class="btn btn-primary col-sm-6">Registrarse</button>
-                    </div>
-                </form>
-            </div>
+                <!-- body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Usuario:</label>
+                            <input type="text" name="user" class="form-control col-sm-6"
+                                placeholder="Ingrese su Nickname">
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Password: </label>
+                            <input type="password" name="pass" class="form-control col-sm-6">
+                        </div>
+                        <div class="form-group row">
+                            <button class="btn btn-primary col-sm-6">Iniciar sesion</button>
+                        </div>
+                    </form>
+                    <br>
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Nombre:</label>
+                            <input type="text" name="user" class="form-control col-sm-6"
+                                placeholder="Ingrese su nombre completo">
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Nickname:</label>
+                            <input type="text" name="Nickname" class="form-control col-sm-6">
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Correo:</label>
+                            <input type="email" name="email" class="form-control col-sm-6">
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Password: </label>
+                            <input type="password" name="pass" class="form-control col-sm-6">
+                        </div>
 
-            <!-- footer -->
-            <div class="modal-footer">
-                <button class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                        <div class="form-group row">
+                            <button class="btn btn-primary col-sm-6">Registrarse</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- footer -->
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- ventana emergente ingresar -->
+    <!-- ventana emergente ingresar -->
 
+
+
+    <div class="clear"></div>
     <!-- Contenedor -->
     <div class="container">
-
-
-
-
-        <div class="clear"></div>
 
         <!-- /Contenido -->
 
@@ -237,55 +237,167 @@
         <br>
         <div class="clear"></div>
 
-        <!--Contenido Informacion de contacto-->
-        <section class="contenido2">
-            <h2>INFORMACION DE CONTACTO</h2> <br>
-            <div id="infoContact">
-                <a name="infoc"></a>
-                <!--Tabla de nuestra informacion-->
-                <table class="contacto">
-
-                    <tr>
-                        <th id="lat">
-                            <figure><img src="./IMG/correo.png"><br> esteban.rodriguezo @udea.edu.co </figure>
-                        </th>
-                        <th id="cent">
-                            <figure><img src="./IMG/ubicacion.png"> <br> Medellin, Colombia</figure>
-                        </th>
-                        <th id="lat">
-                            <figure><img src="./IMG/telefono.png"> <br> 3182123263</figure>
-                        </th>
-                    </tr>
-                </table>
-                <!--Tabla de nuestra informacion-->
-
-            </div>
-
-            <div id="contactanos">
-                <!--Formulario para contactarnos-->
-                <form name="Registro" id="Registro" method="get">
-
-                    <label>Nombre</label><br>
-                    <input type="text" name="name" id="name" /><br /><br />
-                    <label>Correo</label><br>
-                    <input type="email" name="email" id="email" /><br /><br />
-                    <label>Mensaje</label><br>
-                    <input type="text" name="mensaje" id="mensaje" /><br /><br />
-
-                    <input type="submit" value="ENVIAR MENSAJE" id="btn4" />
-                    <!--Botones para el registro y limpieza del formulario-->
-                </form>
-                <!--Formulario para contactarnos-->
-
-            </div>
-        </section>
-        <!--Contenido Informacion de contacto-->
-        <div class="clear"></div>
-
 
 
     </div>
     <!-- Contenedor -->
+
+
+
+    <!-- Footer -->
+    <footer class=" text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+
+
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://es-la.facebook.com/universidaddeantioquia/" role="button"><img src="./iconos/fb.png"
+                        class="iconsm" /></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://twitter.com/UdeA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    role="button"><img src="./iconos/tw.png" class="iconsm" /></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.udea.edu.co/wps/portal/udea/web/inicio/!ut/p/z1/hY7LDoIwEEW_xQVbOrSg4K5BYkDCIzERuzFgasEAJYDw-zbqxsTH7O7ccyaDGMoQa_OpEvlYyTavVT6y5SlKLc_ALoSxTzxInchKyNbH5oqgwz-AqRq-DAXlswdiOy42qAkh7AwLaOol0T52k02AX8CPGwFiopbF813aFsQWiPX8wnve67derctx7Ia1BhrM86wLKUXN9bNsNPiklHIYUfZOoq7J4GrVU0gXizthmbDl/dz/d5/L2dBISEvZ0FBIS9nQSEh/"
+                    role="button"><img src="./iconos/google.png" class="iconsm" /></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/udea/?hl=es"
+                    role="button"><img src="./iconos/insta.png" class="iconsm" /></i></a>
+
+                </a>
+            </section>
+            <!-- Section: Social media -->
+
+
+
+            <!-- Section: Text -->
+            <section class="mb-4 text-center">
+                <p>
+                    Universidad de Antioquia | Vigilada Mineducación | Acreditación institucional hasta el 2022 | NIT
+                    890980040-8
+                    Recepción de correspondencia: calle 70 No. 52 - 21 | Apartado Aéreo 1226 | Dirección: calle 67 No.
+                    53 - 108 | Horario de atención
+                    Conmutador: [57 + 604] 219 8332 | Línea gratuita de atención al ciudadano: 018000 416384 | Fax: [57
+                    + 604] 263 8282
+
+                </p>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white"
+                href="https://www.udea.edu.co/wps/portal/udea/web/inicio/!ut/p/z1/hY7LDoIwEEW_xQVbOrSg4K5BYkDCIzERuzFgasEAJYDw-zbqxsTH7O7ccyaDGMoQa_OpEvlYyTavVT6y5SlKLc_ALoSxTzxInchKyNbH5oqgwz-AqRq-DAXlswdiOy42qAkh7AwLaOol0T52k02AX8CPGwFiopbF813aFsQWiPX8wnve67derctx7Ia1BhrM86wLKUXN9bNsNPiklHIYUfZOoq7J4GrVU0gXizthmbDl/dz/d5/L2dBISEvZ0FBIS9nQSEh/">www.udea.edu.co</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+
 </body>
 
 </html>
