@@ -1,0 +1,38 @@
+* {
+  /* border: 1px solid; */
+  box-sizing: border-box; /*importante*/
+}
+/* HEADER */
+.form-inline{
+    margin-left: 50%;
+    float: right;
+}
+
+.navbar {
+  margin-bottom: 0%;
+  background-color: green;
+  
+}
+
+.jumbotron {
+  width: 100%;
+  float: left;
+  background-color: rgb(245, 245, 245);
+}
+.logo {
+  width: 85%;
+  text-align: center;
+  float: left;
+}
+.logo img {
+  width: 40%;
+}
+.jumbotron button {
+  width: 14%;
+  margin-top: 6%;
+  border-color: transparent;
+  background-color: rgb(255, 193, 7);
+  float: right;
+}
+
+/* HEADER */
