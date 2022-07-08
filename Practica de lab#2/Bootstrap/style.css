@@ -1,11 +1,15 @@
 * {
-  /* border: 1px solid; */
+  border: 1px solid;
   box-sizing: border-box; /*importante*/
 }
+.clear {
+    clear: both;
+  }
+
+  
 /* HEADER */
 .form-inline{
-    margin-left: 50%;
-    float: right;
+    margin-left: 40%;
 }
  .icon{
     width: 20%;
@@ -13,6 +17,7 @@
  }
 
 .navbar {
+    width: 100%;
   margin-bottom: 0%;
   background-color: green;
   
@@ -59,3 +64,13 @@ footer{
     border: transparent;
  }
 /* FOOTER */
+
+
+
+.carousel-inner img{
+	width: 100%;
+}
+.carousel-caption h3{
+	text-shadow: 5px 5px 5px black;
+	font-size: 3em;
+}
