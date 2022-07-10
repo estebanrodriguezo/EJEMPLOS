@@ -3,26 +3,24 @@
   box-sizing: border-box; /*importante*/
 }
 .clear {
-    clear: both;
-  }
+  clear: both;
+}
 
-  
 /* HEADER */
 
- .icon{
-    width: 20%;
-    float: left;
- }
+.icon {
+  width: 20%;
+  float: left;
+}
 
 .navbar {
-    width: 100%;
+  width: 100%;
   margin-bottom: 0%;
   background-color: green;
-  
 }
 
 .jumbotron {
-    margin-top: 3.1%;
+  margin-top: 3.1%;
   width: 100%;
   float: left;
   background-color: rgb(245, 245, 245);
@@ -43,7 +41,7 @@
   background-color: rgb(255, 193, 7);
   float: right;
 }
-.btnp{
+.btnp {
   width: 6.5%;
   border-color: transparent;
   background-color: rgb(255, 193, 7);
@@ -52,35 +50,31 @@
 
 /* HEADER */
 
-
-
 /* FOOTER */
 
-footer{
-    background-color: rgb(1, 69, 1);
+footer {
+  background-color: rgb(1, 69, 1);
 }
 
-.iconsm{
-    width: 30px;
-    border-radius: 50%;
- }
- .btn{
-    border: transparent;
- }
+.iconsm {
+  width: 30px;
+  border-radius: 50%;
+}
+.btn {
+  border: transparent;
+}
 /* FOOTER */
-
-
 
 /* UNIVERSIDAD PAGE */
 
-.carousel-inner img{
-	width: 100%;
+.carousel-inner img {
+  width: 100%;
 }
-.carousel-caption h3{
-	text-shadow: 5px 5px 5px black;
-	font-size: 3em;
+.carousel-caption h3 {
+  text-shadow: 5px 5px 5px black;
+  font-size: 3em;
 }
-.img-p{
+.img-p {
   width: 20%;
 }
 /* UNIVERSIDAD PAGE */
