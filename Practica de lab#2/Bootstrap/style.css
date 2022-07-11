@@ -1,0 +1,64 @@
+* {
+  /* border: 1px solid; */
+  box-sizing: border-box; /*importante*/
+}
+.clear {
+  clear: both;
+}
+
+/* HEADER */
+
+
+.navbar {
+  width: 100%;
+  margin-bottom: 0%;
+  background-color: green;
+}
+
+.jumbotron {
+  margin-top: 3.1%;
+  width: 100%;
+  float: left;
+  
+}
+.logo img {
+  width:40%;
+  min-width: 300px;
+}
+
+.icon {
+  width: 15%;
+  float: left;
+}
+
+
+/* HEADER */
+
+/* FOOTER */
+
+footer {
+  background-color: rgb(1, 69, 1);
+}
+
+.iconsm {
+  width: 30px;
+  border-radius: 50%;
+}
+.btn {
+  border: transparent;
+}
+/* FOOTER */
+
+/* UNIVERSIDAD PAGE */
+
+.carousel-inner img {
+  width: 100%;
+}
+.carousel-caption h3 {
+  text-shadow: 5px 5px 5px black;
+  font-size: 3em;
+}
+.img-p {
+  width: 20%;
+}
+/* UNIVERSIDAD PAGE */
