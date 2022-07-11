@@ -61,18 +61,21 @@
         </header>
         <!-- /Cabecera -->
     </div>
-    <div class="clear"></div>
+
 
 
     <!-- Jumbotron -->
     <section class="jumbotron">
         <div class="container">
-            <div class="logo">
-                <img src="./IMG/logo.png" />
+            <div class="row">
+                <div class="col-sm-12 text-center logo">
+                    <img  src="./IMG/logo.png" />
+                </div>
+                <div class="col-sm-12 text-center">
+                    <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#modal_info"><img
+                            src="./iconos/person.png" class="icon " />INGRESAR</button>
+                </div>
             </div>
-
-            <button class="btn btn-primary " type="button" data-toggle="modal" data-target="#modal_info"><img
-                    src="./iconos/person.png" class="icon " />INGRESAR</button>
         </div>
     </section>
     <!-- Jumbotron -->
@@ -102,8 +105,8 @@
                             <label class="col-sm-3 col-form-label">Password: </label>
                             <input type="password" name="pass" class="form-control col-sm-6">
                         </div>
-                        <div class="form-group row">
-                            <button class="btn btn-primary col-sm-6">Iniciar sesion</button>
+                        <div class="form-group text-center">
+                            <button class="btn btn-success col-md-8 ">Iniciar sesion</button>
                         </div>
                     </form>
                     <br>
@@ -126,8 +129,8 @@
                             <input type="password" name="pass" class="form-control col-sm-6">
                         </div>
 
-                        <div class="form-group row">
-                            <button class="btn btn-primary col-sm-6">Registrarse</button>
+                        <div class="form-group text-center">
+                            <button class="btn btn-success col-md-8 ">Registrarse</button>
                         </div>
                     </form>
                 </div>
@@ -154,7 +157,7 @@
             <section class="col-md-4">
 
                 <!-- Noticias -->
-                <aside class="noricias">
+                <aside class="noticias">
 
                     <H2 id="tituloE">NOTICIAS</H2>
 
@@ -198,7 +201,9 @@
 
                 <h1 id="tituloP">ACERCA DE LA UDEA</h1>
 
-                <h2>Historia</h2>
+                <em>
+                    <h2>Historia</h2>
+                </em>
                 <p class="text-justify">Con más de doscientos años de historia, son muchos los personajes, hitos, luchas
                     y anécdotas que
                     permanecen en la Memoria de la Universidad de Antioquia. Este espacio quiere recuperar ese legado
@@ -232,10 +237,12 @@
                     trata de compartir los ideales, los logros, los fracasos y los sueños que, en conjunto, hacen la
                     historia de la Universidad</p>
                 <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/quienes-somos/"><button
-                        id="btn1">SEGUIR LEYENDO</button></a>
+                        class="btn btn-success">SEGUIR LEYENDO</button></a>
                 <br><br>
 
-                <h2>Principios y valores</h2>
+                <em>
+                    <h2>Principios y valores</h2>
+                </em>
 
                 <p class="text-justify">
                     La Institución orienta sus esfuerzos hacia la consolidación como centro de cultura y de ciencia que
@@ -254,11 +261,15 @@
                 </p>
                 <a
                     href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/quienes-somos/contenido/asmenulateral/principios-valores%20/!ut/p/z1/xZRbT8MgGIb_il7ssgFKT1zWWg9z6zZ1unJjsKMOs0LXsmn89TKPmdlBo43cAMn7PR-8kBdQMAJUsoW4Y1ooyaZmn1LvJiCRjUIHdnonRwEMPSckmPTQRccH16sCeIZcGA7ifnLZi_qHbRvQ79TDDSOE36vfIqDb8VeAAppJXeoJSEtVaTadjzlrQVav7iaq4O9rIWst9Dx78agFZ3PBJa-tvVoVqm7BTEnNpRirpbbgcj5lmldLZVkJmYlSqNpasKmqeL237F9mYgxSnBPMHZJZvoO45fAMWczNiJXfuoEPST4OPGLuS7daEqM3QTJwY2RHRnCKYzggidvHx6e24-OvhDVvtsu11LjubzzDJQTXC8EfwFCqqjC_6OKHlzzZ2QH9ssMr_tOjI-TBweHZeRL1jmHUNB7_CX6jOX6jeGw3i0fN4pv1vu39Et_eFXgmke2qG3XvDJbpiSVkrsDoI3LAaCVywGhd5BiGuJ_NaGiib1n4qI3uP7KvLIbDYRFg7zzOuzF20vbi6SCx1k407XfCcH__GSH5C_M!/dz/d5/L2dBISEvZ0FBIS9nQSEh/?urile=wcm%3Apath%3A%2FPortalUdeA%2FasPortalUdeA%2FasHomeUdeA%2FasInstitucional%2Fquienes-%20somos%2FContenido%2FasMenuLateral%2Fprincipios-valores"><button
-                        id="btn1">SEGUIR LEYENDO</button></a>
+                        class="btn btn-success">SEGUIR LEYENDO</button></a>
                 <br><br>
 
-                <h2>Símbolos</h2>
-                <h3>El escudo</h3>
+                <em>
+                    <h2>Símbolos</h2>
+                </em> <br>
+                <em>
+                    <h3>El Escudo</h3>
+                </em>
                 <div class="row">
                     <div class="col-xl-3 text-center"> <img src="./IMG/escudo.jpg" class="escudo" /></div>
                     <div class="col-xl-9">
@@ -282,7 +293,9 @@
                             República.</p>
                     </div>
                 </div>
-                <h3>La bandera</h3>
+                <em>
+                    <h3>La Bandera</h3>
+                </em>
                 <div class="row">
                     <div class="col-xl-3 text-center"> <img src="./IMG/bandera.jpg" class="escudo" /></div>
                     <div class="col-xl-9">
@@ -293,7 +306,9 @@
                             permanente y horizonte de optimismo.</p>
                     </div>
                 </div>
-                <h3>El himno</h3>
+                <em>
+                    <h3>El Himno</h3>
+                </em>
                 <div class="row">
                     <div class="col-xl-12">
                         <p class="text-justify"> En 1934 cuando recién comenzaba el maestro José María Bravo Márquez
@@ -406,16 +421,20 @@
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="https://www.udea.edu.co/wps/myportal/udea/web/inicio/somos-udea/egresados/tramites-solicitudes/actualiza-datos" class="text-white">Actualizar datos de egresados</a>
+                                <a href="https://www.udea.edu.co/wps/myportal/udea/web/inicio/somos-udea/egresados/tramites-solicitudes/actualiza-datos"
+                                    class="text-white">Actualizar datos de egresados</a>
                             </li>
                             <li>
-                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/somos-udea/profesores/aspirantes-docente-catedra" class="text-white">Aspirantes a docente de cátedra</a>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/somos-udea/profesores/aspirantes-docente-catedra"
+                                    class="text-white">Aspirantes a docente de cátedra</a>
                             </li>
                             <li>
-                                <a href="https://udearroba.udea.edu.co/home/" class="text-white">Ude@ educación virtual</a>
+                                <a href="https://udearroba.udea.edu.co/home/" class="text-white">Ude@ educación
+                                    virtual</a>
                             </li>
                             <li>
-                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/verificacion-actas-diplomas-grado" class="text-white">Verificación y consulta de diplomas y actas de grado</a>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/verificacion-actas-diplomas-grado"
+                                    class="text-white">Verificación y consulta de diplomas y actas de grado</a>
                             </li>
                         </ul>
                     </div>
@@ -427,16 +446,20 @@
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/medios" class="text-white">Medios UdeA</a>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/medios"
+                                    class="text-white">Medios UdeA</a>
                             </li>
                             <li>
-                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/medios/periodico-alma-mater" class="text-white">Periódico Alma Mater</a>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/medios/periodico-alma-mater"
+                                    class="text-white">Periódico Alma Mater</a>
                             </li>
                             <li>
-                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/medios/experimenta" class="text-white">Revista Experimenta</a>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/medios/experimenta"
+                                    class="text-white">Revista Experimenta</a>
                             </li>
                             <li>
-                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/emisora-cultural" class="text-white">Emisora Cultura UdeA</a>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/emisora-cultural"
+                                    class="text-white">Emisora Cultura UdeA</a>
                             </li>
                         </ul>
                     </div>
@@ -448,16 +471,19 @@
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/estudiar-udea/quiero-estudiar-udea/pregrado" class="text-white">Pregrado</a>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/estudiar-udea/quiero-estudiar-udea/pregrado"
+                                    class="text-white">Pregrado</a>
                             </li>
                             <li>
-                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/estudiar-udea/quiero-estudiar-udea/posgrado" class="text-white">Posgrado</a>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/estudiar-udea/quiero-estudiar-udea/posgrado"
+                                    class="text-white">Posgrado</a>
                             </li>
                             <li>
                                 <a href="https://udearroba.udea.edu.co/" class="text-white">Ude@ Educación virtual</a>
                             </li>
                             <li>
-                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/estudiar-udea/educacion-continua" class="text-white">Educación continua</a>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/estudiar-udea/educacion-continua"
+                                    class="text-white">Educación continua</a>
                             </li>
                         </ul>
                     </div>
