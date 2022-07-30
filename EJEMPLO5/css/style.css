@@ -1,0 +1,10 @@
+.resaltar:hover{
+	border: 1px red solid;
+}
+
+.resaltar2{
+	font-weight: bold;
+    border: 1px red solid;
+    background-color: red;
+    color: white;
+}
