@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 6: Clase 14 Formularios</title>
+    <script type="text/javascript" src="./js/codigo.js"></script>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <h2>Login</h2>
+    <form id="form_login" action="login.php" method="post" name="login">
+        <label for="">Usuario: </label><input type="text" name="user"> <br><br>
+        <label for="">Password: </label><input type="password" name="pass"> <br><br>
+        <input type="submit" name="enviar" value="Enviar">
+        <input type="reset" name="clear" >
+    </form>
+
+    <h2>Envios</h2>
+    <form action="" name="envios">
+        <label for="">Direccion</label>
+        <input type="submit" value="Enviar" name="enviar">
+    </form>
+
+    <h2>Registro</h2>
+    <form id="form_registro" action="registro.php" method="post" name="registro">
+        <label for="">Nombre</label><input type="text" name="nombre" value="sebas"> <br><br>
+        <label for="">Apellido</label><input type="text" name="apellido" value="villa"> <br><br>
+        <label for="">Cedula</label><input type="number" name="cedula" value="123"> <br><br>
+        <label for="">Correo</label><input type="email" name="correo"> <br><br>
+        <label for="">Password</label><input type="password" name="pass"> <br><br>
+
+        <label for="">Genero</label><br>
+        <input type="radio" value="mujer" name="genero"> <label for="">Mujer</label><br><br>
+        <input type="radio" value="hombre" name="genero"> <label for="">Hombre</label><br><br>
+        <input type="radio" value="otre" name="genero"> <label for="">Otre</label><br><br>
+
+        <label for="">Deporte</label> <br>
+        <input type="checkbox" value="futbol" name="deporte"> <label for="">Futbol</label><br><br>
+        <input type="checkbox" value="voleibol" name="deporte"> <label for="">Voleibol</label><br><br>
+        <input type="checkbox" value="natacion" name="deporte"> <label for="">Natacion</label><br><br>
+
+        <label for="">Transporte</label><br>
+        <select name="transporte" id="">
+            <option value="publico">Publico</option>
+            <option value="particular">Particular</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+
+        <label for="">Comentarios</label><br>
+        <textarea name="comentarios" id="" ></textarea> <br><br>
+
+        <input type="submit" name="enviar" value="Enviar">
+        <input type="reset" name="clear" >
+    </form>
+</body>
+</html>
