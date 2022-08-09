@@ -10,16 +10,16 @@
   <body>
     <h1>Formulario</h1>
 
-    <form action=""></form>
 
-    <form name="formulario" action="reistro.php" method="post">
+    <form name="formulario" action="/registro.php" method="post">
+      <!--  method="post" -->
     <table>
       <tr>
-        <label for="name">Nombre: </label> <input type="text" name="nombre" value="esteban" />
+        <label for="name">Nombre: </label> <input type="text" name="nombre"  />
 
-        <label for="fNac">f.nac: </label><input type="text" name="fNac" value="no se que sea fnac"/>
+        <label for="fNac">f.nac: </label><input type="text" name="fNac"/>
 
-        <label for="">dni: </label><input type="number" name="dni" value="106181795529" /><br><br>
+        <label for="">dni: </label><input type="number" name="dni" /><br><br>
 
         <label for="">Apellidos: </label><input type="text" name="Apellidos"/><br><br>
 
@@ -33,8 +33,8 @@
 
         <label for="">telefono: </label><input type="number" name="tel" /><br><br>
         <!--  -->
-        <label for="">Opcion: </label>
-        <select name="transporte" id="">
+        <label >Opcion: </label>
+        <select name="transporte" name="opciones">
             <option value="op1">op1</option>
             <option value="op2">op2</option>
             <option value="op3">op3</option>
