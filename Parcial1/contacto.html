@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Parcial 1</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/codigo.js"></script>
+  </head>
+
+  <body>
+    <div class="page">
+      <header>
+        <h3 class="header">
+          <a href="./index.html" title="Home"
+            ><img src="./img/h1.jpg" class="jumbotron" /><span></span
+          ></a>
+        </h3>
+        <nav>
+          <ul class="topmenu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="transformaciones.html">Transformaciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="main">
+        <div class="greybox">
+          <h2>Información de contacto:</h2>
+          <p>Agrege su información a continuación:</p>
+          <form
+            name="formulario"
+            action="#"
+            method="post"
+            onsubmit="return configForm(this);"
+            style="position: relative; z-index: 1"
+          >
+            <br />
+            <p>
+              <input
+                type="text"
+                name="name"
+                placeholder="Nombre"
+                class="width75"
+              />
+            </p>
+            <br />
+            <p>
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="width75"
+              />
+            </p>
+            <br />
+            <p>
+              <input
+                type="number"
+                name="phone"
+                placeholder="Telefono"
+                class="width75"
+              />
+            </p>
+            <br />
+            <p>
+              <input
+                type="text"
+                name="subject"
+                placeholder="Asunto"
+                class="width75"
+              />
+            </p>
+            <br />
+            <p>
+              <textarea
+                name="message"
+                rows="5"
+                cols="35"
+                placeholder="Message"
+              ></textarea>
+            </p>
+            <br />
+            <p>
+              <label>Sexo</label>
+              <select name="select">
+                <option value="0">--Seleccionar--</option>
+                <option value="1">Femenino</option>
+                <option value="2">Maculino</option>
+              </select>
+            </p>
+            <br />
+            <p>
+              <label>Dificultad del parcial</label>
+              <input type="radio" name="radioGroup" value="1" class="radio" />
+              Muy Dificil
+              <input type="radio" name="radioGroup" value="2" class="radio" />
+              Dicicil
+              <input type="radio" name="radioGroup" value="3" class="radio" />
+              Normal
+              <input type="radio" name="radioGroup" value="4" class="radio" />
+              Fácil
+            </p>
+            <br />
+            <div class="lightBlueBg">
+              <h2>Temas que he aprendido</h2>
+              <p>
+                <input
+                  type="checkbox"
+                  name="checkGroup"
+                  value="1"
+                  class="radio"
+                />
+                Html<br />
+                <input
+                  type="checkbox"
+                  name="checkGroup"
+                  value="2"
+                  class="radio"
+                />
+                Css<br />
+                <input
+                  type="checkbox"
+                  name="checkGroup"
+                  value="3"
+                  class="radio"
+                />
+                JavaScriot<br />
+                <input
+                  type="checkbox"
+                  name="checkGroup"
+                  value="4"
+                  class="radio"
+                />
+                Ninguno <input type="text" name="other" class="width33" />
+              </p>
+            </div>
+            <br />
+            <p>
+              <input type="submit" value="Enviar" class="button" /><input
+                type="reset"
+                value="Borrar"
+                class="button"
+              />
+            </p>
+          </form>
+
+          <div class="cleaner"></div>
+        </div>
+      </section>
+
+      <footer>
+        © 20XX
+        <a href="#">Enlace 1</a>| <a href="Enlace">Enlace 2</a>|
+        <a href="Enlace">Enlace 3</a>| <a href="Enlace">Enlace 4</a>|
+        <a href="#">Enlace 5</a>
+      </footer>
+    </div>
+    <div class="footer2"></div>
+  </body>
+</html>
