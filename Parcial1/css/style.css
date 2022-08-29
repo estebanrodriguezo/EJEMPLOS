@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url("/img/fondo.jpg");
+  background-image: url("./img/fondo.jpg");
   padding-top: 1%;
   padding-bottom: 2%;
   padding-left: 10%;
