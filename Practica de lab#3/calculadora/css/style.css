@@ -12,8 +12,8 @@
 
 .calculadora {
   display: grid;
-  grid-template-columns: repeat(7, 90px);
-  grid-template-rows: repeat(8, 45px);
+  grid-template-columns: repeat(7, 120px);
+  grid-template-rows: repeat(8, 60px);
   background-color: rgba(251, 244, 244, 0.479);
   border: 1px solid gray;
   padding: 1%;
@@ -44,25 +44,22 @@ button:focus{
 }
 
 .display {
-    grid-column: 1 / -1;
-    padding: 4px;
+    grid-column: 1 / -1 ;
+    padding: 8px;
     display: flex;
     margin: 1px 10px 6px;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
     border: 1.5px solid rgba(96, 96, 97, 0.544);
     text-align: right;
-    justify-content: space-between;
     word-break: break-all;
+    background-color:  rgba(96, 96, 97, 0.127);
 }
-#valor-actual {
+#vAnterior {
     font-size: 1.5em;
 }
 
-#valor-anterior {
-    font-size: 2em;
-}
-#resultado{
+#vActual {
     font-size: 1.5em;
 
 }
