@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/codigo.js" type="text/javascript" defer></script>
+    <script src="./js/Calculadora.js" type="text/javascript"></script>
+    <script src="./js/Display.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="calculadora">
+        <div class="display">
+          <div id="vAnterior"></div>
+          <div id="vActual"></div>
+        </div>
+       
+        
+        <button class="col-2" >Rad | Deg</button>
+        <button class="factorial">x!</button>
+        <button class="parentesis">(</button>
+        <button class="parentesis">)</button>
+        <button class="porcentaje">%</button>
+        <button class="AC"onclick="display.borrarTodo()">AC</button>
+        <button class="inv">Inv</button>
+        <button class="sin">sin</button>
+        <button class="ln">ln</button>
+        <button class="numero">7</button>
+        <button class="numero">8</button>
+        <button class="numero">9</button>
+        <button class="operador" value="dividir">/</button>
+         <button class="numero">π</button>
+        <button class="cos">cos</button>
+        <button class="log">log</button>
+        <button class="numero">4</button>
+        <button class="numero">5</button>
+        <button class="numero">6</button>
+        <button class="operador" value="multiplicar">x</button>
+        <button class="e">e</button>
+        <button class="tan">tan</button>
+        <button class="operador">√</button>
+        <button class="numero">1</button>
+        <button class="numero">2</button>
+        <button class="numero">3</button>
+        <button class="operador" value="restar">-</button>
+        <button class="ans">Ans</button>
+        <button class="exp">EXP</button>
+        <button class="operador" value="elevado">x<sup>y</sup></button>
+        <button class="numero">0</button>
+        <button class="punto">.</button>
+        <button class="operador" value="igual">=</button>
+        <button class="operador" value="sumar">+</button>
+      </div>
+    </div>
+  </body>
+
+</html>

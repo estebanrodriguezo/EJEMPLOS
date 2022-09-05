@@ -1,0 +1,69 @@
+.calculadora {
+	padding: 20px;
+	border: 1px solid black;
+	border-radius: 25px;
+	margin: auto;
+	max-width: 600px;
+}
+
+.fun {
+	background-color: lightgray;
+}
+
+.calculadora td button {
+	display: block;
+	width: 70px;
+	font-size: 15px;
+	padding: 8px 0px;
+	margin: 1px;
+	border: 0px;
+}
+
+.igual {
+	background-color: blue;
+	color: white;
+}
+
+#display {
+	display: block;
+	border: 2px solid lightblue;
+	border-radius: 10px;
+	padding: 5px 10px;
+}
+
+#pantalla {
+	display: block;
+	width: 100%;
+	text-align: right;
+	font-size: 30px;
+	height: 35px;
+}
+
+#indicadores {
+	color: gray;
+	padding: 0px;
+	margin: 0px;
+	font-size: 12px;
+}
+
+#operacion {
+	display: block;
+	width: 100%;
+	text-align: right;
+	font-size: 17px;
+	height: 20px;
+	color: gray;
+}
+
+.resaltar-igual{
+	background: rgba(70, 137, 248,0.7);
+	color: black;
+}
+
+.resaltar {
+	background: rgba(209, 209, 209,0.7);
+}
+
+.resaltar-num {
+	background: lightgray;
+}
