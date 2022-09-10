@@ -1,0 +1,18 @@
+.selectUniv{
+    margin: 1%;
+    padding: 1%;
+    border: 1px solid rgb(12, 169, 17);
+    
+    
+}
+
+#mapa {
+    margin:auto;
+    height: 90%;
+    width: 90%;
+  }
+  html,body {
+    height: 90%;
+    margin: 0;
+    padding: 0;
+  }
