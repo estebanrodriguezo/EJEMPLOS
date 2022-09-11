@@ -1,18 +1,38 @@
-.selectUniv{
-    margin: 1%;
-    padding: 1%;
-    border: 1px solid rgb(12, 169, 17);
-    
-    
+.selectUniv {
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  padding: 1%;
+  border: 1px solid rgb(12, 169, 17);
+  float: left;
+  width: 50%;
+}
+
+.carreras {
+  float: right;
+  width: 40%;
+  border: 1px solid red;
+  margin-top: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  padding: 1%;
 }
 
 #mapa {
-    margin:auto;
-    height: 90%;
-    width: 90%;
-  }
-  html,body {
-    height: 90%;
-    margin: 0;
-    padding: 0;
-  }
+  margin: auto;
+  height: 90%;
+  width: 90%;
+}
+html,
+body {
+  height: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.active {
+  display: none;
+}

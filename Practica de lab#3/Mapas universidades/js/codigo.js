@@ -6,13 +6,42 @@ window.onload = function () {
     nav.getCurrentPosition(visualizarPosicion, funcionError);
   }
 };
+function mostrar() {
+  const carreras = document.getElementsByName("carrera");
+  console.log(carreras);
+  for (let i = 1; i < carreras.length; i++) {
+      carreras[i].className = "";
+  }
 
+  switch (this.id) {
+      case "udea":
+          carreras[1].className = "activo";
+          const pos = {
+              lat: 6.2677479,
+              lng: -75.5688416,
+          };
+          mapa.setCenter(pos);
+          break;
+      case "unal":
+          carreras[2].className = "activo";
+          break;
+      case "udem":
+          carreras[5].className = "activo";
+          break;
+      case "eafit":
+          carreras[3].className = "activo";
+          break;
+      case "itm":
+          carreras[4].className = "activo";
+          break;
+  }
+}
 var ubicaciones = [
-  { lat: 6.282912639045804, lng: -75.58250695339068 },
-  { lat: 6.268665063820647, lng: -75.56901326138225 },
-  { lat: 6.232536588928982, lng: -75.60993558465444 },
-  { lat: 6.200498689949552, lng: -75.5790535232722 },
-  { lat: 6.243087565100231, lng: -75.58927676930888 },
+  { lat: 6.282912639045804, lng: -75.58250695339068 }, //TECNOLOGICO DE ANTIOQUIA
+  { lat: 6.268665063820647, lng: -75.56901326138225 }, //UDEA
+  { lat: 6.232536588928982, lng: -75.60993558465444 }, //UDEM
+  { lat: 6.200498689949552, lng: -75.5790535232722 }, //EAFIT
+  { lat: 6.243087565100231, lng: -75.58927676930888 }, //UPB
 ];
 var map;
 
@@ -27,7 +56,7 @@ function visualizarPosicion(position) {
   );
   var opcionesMapa = {
     center: coord,
-    zoom: 12,
+    zoom: 13,
     //mapTypeId: "satellite",
     mapTypeId: google.maps.MapTypeId.HYBRID,
   };
@@ -38,7 +67,7 @@ function visualizarPosicion(position) {
   var opcionesMarcador = {
     position: coord,
     map: map,
-    icon: "user.png ",
+    icon: "./marcadores/user.png",
     animation: google.maps.Animation.BOUNCE,
   };
   var marcaUsuario = new google.maps.Marker(opcionesMarcador);
@@ -53,8 +82,34 @@ function visualizarPosicion(position) {
     var marca = new google.maps.Marker(opcionesMarcadores);
     marcadores.push(marca);
   });
-  console.log(marcadores);
 
+  //Marcadores personalizados
+  marcadores[0].setIcon({
+    url: "../logos/tdea.png",
+    scaledSize: new google.maps.Size(40, 40),
+  });
+  marcadores[1].setIcon({
+    url: "../logos/udea.png",
+
+    scaledSize: new google.maps.Size(40, 40),
+  });
+  marcadores[2].setIcon({
+    url: "../logos/udm.png",
+
+    scaledSize: new google.maps.Size(40, 40),
+  });
+  marcadores[3].setIcon({
+    url: "../logos/eafit.png",
+
+    scaledSize: new google.maps.Size(40, 40),
+  });
+  marcadores[4].setIcon({
+    url: "../logos/upb.png",
+
+    scaledSize: new google.maps.Size(40, 40),
+  });
+
+  console.log(marcadores);
   //POLIGONOS
   var Poligonos = [
     [
@@ -106,6 +161,7 @@ function visualizarPosicion(position) {
   ];
 
   console.log(Poligonos);
+  var polionosUNIV = [];
   for (var i = 0; Poligonos.length > i; i++) {
     var opcionesPoligono = {
       path: Poligonos[i],
@@ -115,20 +171,22 @@ function visualizarPosicion(position) {
       fillColor: "#FF0000",
       fillOpacity: 0.2,
     };
-    var polionosUNIV = new google.maps.Polygon(opcionesPoligono);
+    polionosUNIV.push(new google.maps.Polygon(opcionesPoligono));
   }
+
+  console.log(polionosUNIV);
 
   //EVENTOS
 
-  polionosUNIV.addListener("click", mostrarInfo);
-  polionosUNIV.addListener("dblclick", redireccionar);
+  
+    polionosUNIV[0].addListener("mouseover", mostrarInfo);
+    polionosUNIV[1].addListener("click", mostrarInfo1);
+    polionosUNIV[2].addListener("click", mostrarInfo2);
+    polionosUNIV[3].addListener("click", mostrarInfo3);
+    polionosUNIV[4].addListener("click", mostrarInfo4);
+   
+  }
 
-
-  marcadores.forEach(function callback(m) {
-    m.addListener("mouseover", cambiarIcono);
-    m.addListener("mouseout", cambiarIcono2);
-  });
-}
 
 function mostrarInfo(event) {
   var contenido =
@@ -145,25 +203,65 @@ function mostrarInfo(event) {
   var info = new google.maps.InfoWindow(opcionesInfo);
   info.open(map);
 }
+function mostrarInfo1(event) {
+  var contenido =
+    "<h3>Universidad de Medellin</h3>" +
+    "<p>La Universidad de Medellín es una institución no oficial de educación superior, ubicada en " +
+    event.latLng +
+    "</p>" +
+    "<p>sitio web <a href='https://udemedellin.edu.co/'>UdeM</a></p>";
 
-function cambiarIcono() {
-  var opciones = {
-    url: "udea.png",
-    scaledSize: new google.maps.Size(70, 70),
+  var opcionesInfo = {
+    content: contenido,
+    position: event.latLng,
   };
-  this.setIcon(opciones);
+  var info = new google.maps.InfoWindow(opcionesInfo);
+  info.open(map);
 }
+function mostrarInfo2(event) {
+  var contenido =
+    "<h3>Universidad Pontificia Bolivariana</h3>" +
+    "<p>Universidad privada ubicada en " +
+    event.latLng +
+    "</p>" +
+    "<p>sitio web <a href='https://www.upb.edu.co/es/home'>UPB</a></p>";
 
-function cambiarIcono2() {
-  var opciones = {
-    url: "udea.png",
-    scaledSize: new google.maps.Size(40, 40),
+  var opcionesInfo = {
+    content: contenido,
+    position: event.latLng,
   };
-  this.setIcon(opciones);
+  var info = new google.maps.InfoWindow(opcionesInfo);
+  info.open(map);
 }
+function mostrarInfo3(event) {
+  var contenido =
+    "<h3>Universidad EAFIT</h3>" +
+    "<p>Universida privada ubicada en " +
+    event.latLng +
+    "</p>" +
+    "<p>sitio web <a href='https://www.eafit.edu.co'>EAFIT</a></p>";
 
-function redireccionar() {
-  window.location.href = "http://www.udea.edu.co";
+  var opcionesInfo = {
+    content: contenido,
+    position: event.latLng,
+  };
+  var info = new google.maps.InfoWindow(opcionesInfo);
+  info.open(map);
+}
+function mostrarInfo4(event) {
+  var contenido =
+    "<h3>Tecnológico de Antioquia</h3>" +
+    "<p>Institución pública de educación superior dedicada principalmente a la formación técnica y tecnológica, ubicada en " +
+    event.latLng +
+    "</p>" +
+    "<p>sitio web <a href='https://www.tdea.edu.co/'>TdeA</a></p>";
+
+  var opcionesInfo = {
+    content: contenido,
+    position: event.latLng,
+  };
+  var info = new google.maps.InfoWindow(opcionesInfo);
+  info.open(map);
 }
 
 //agrega nueva marca y genera la ruta
