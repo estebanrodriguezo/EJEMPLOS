@@ -5,37 +5,80 @@ window.onload = function () {
   if (nav) {
     nav.getCurrentPosition(visualizarPosicion, funcionError);
   }
-};
-function mostrar() {
-  const carreras = document.getElementsByName("carrera");
-  console.log(carreras);
-  for (let i = 1; i < carreras.length; i++) {
-      carreras[i].className = "";
+
+  const selectUniv = document.getElementsByName("univ");
+  for (let i = 0; i < selectUniv.length; i++) {
+    selectUniv[i].onclick = mostrar;
   }
 
+  console.log(selectUniv[1]);
+};
+//Funcion para mostrar la informacion de carreras de cada informacion
+function mostrar() {
+  const carreras = document.getElementsByName("carrera");
+
+  for (let i = 0; i < carreras.length; i++) {
+    carreras[i].className = "active";
+  }
+
+  //Cambio de universidad seleccionada
   switch (this.id) {
-      case "udea":
-          carreras[1].className = "activo";
-          const pos = {
-              lat: 6.2677479,
-              lng: -75.5688416,
-          };
-          mapa.setCenter(pos);
-          break;
-      case "unal":
-          carreras[2].className = "activo";
-          break;
-      case "udem":
-          carreras[5].className = "activo";
-          break;
-      case "eafit":
-          carreras[3].className = "activo";
-          break;
-      case "itm":
-          carreras[4].className = "activo";
-          break;
+    case "UDEA":
+      carreras[0].className = "";
+      var pos = {
+        lat: 6.268665063820647,
+        lng: -75.56901326138225,
+      };
+
+      var zoom = 16;
+      map.setCenter(pos);
+      map.setZoom(zoom);
+      break;
+    case "UDEM":
+      carreras[1].className = "";
+      var pos = {
+        lat: 6.232536588928982,
+        lng: -75.60993558465444,
+      };
+
+      var zoom = 16;
+      map.setCenter(pos);
+      map.setZoom(zoom);
+
+      break;
+    case "UPB":
+      carreras[2].className = "";
+      var pos = {
+        lat: 6.243087565100231,
+        lng: -75.58927676930888,
+      };
+      var zoom = 16;
+      map.setCenter(pos);
+      map.setZoom(zoom);
+      break;
+    case "TEC":
+      carreras[3].className = "";
+      var pos = {
+        lat: 6.282912639045804,
+        lng: -75.58250695339068,
+      };
+      var zoom = 16;
+      map.setCenter(pos);
+      map.setZoom(zoom);
+      break;
+    case "EAFIT":
+      carreras[4].className = "";
+      var pos = {
+        lat: 6.200498689949552,
+        lng: -75.5790535232722,
+      };
+      var zoom = 16;
+      map.setCenter(pos);
+      map.setZoom(zoom);
+      break;
   }
 }
+//Ubicaciones de la universidades
 var ubicaciones = [
   { lat: 6.282912639045804, lng: -75.58250695339068 }, //TECNOLOGICO DE ANTIOQUIA
   { lat: 6.268665063820647, lng: -75.56901326138225 }, //UDEA
@@ -57,7 +100,6 @@ function visualizarPosicion(position) {
   var opcionesMapa = {
     center: coord,
     zoom: 13,
-    //mapTypeId: "satellite",
     mapTypeId: google.maps.MapTypeId.HYBRID,
   };
   map = new google.maps.Map(mapa, opcionesMapa);
@@ -72,6 +114,7 @@ function visualizarPosicion(position) {
   };
   var marcaUsuario = new google.maps.Marker(opcionesMarcador);
 
+  //Creacion de marcadores
   var marcadores = [];
   ubicaciones.forEach(function callback(ubicacion) {
     var opcionesMarcadores = {
@@ -179,15 +222,32 @@ function visualizarPosicion(position) {
   //EVENTOS
 
   
-    polionosUNIV[0].addListener("mouseover", mostrarInfo);
-    polionosUNIV[1].addListener("click", mostrarInfo1);
-    polionosUNIV[2].addListener("click", mostrarInfo2);
-    polionosUNIV[3].addListener("click", mostrarInfo3);
-    polionosUNIV[4].addListener("click", mostrarInfo4);
-   
-  }
-
-
+  polionosUNIV[0].addListener("mouseover", mostrarInfo);
+  polionosUNIV[0].addListener("mouseout", () => {
+    info.close();
+  });
+  polionosUNIV[0].addListener(
+    "dblclick",
+    () => (window.location.href = "http://www.udea.edu.co")
+);
+  polionosUNIV[1].addListener("mouseover", mostrarInfo1);
+  polionosUNIV[1].addListener("mouseout", () => {
+    info.close();
+  });
+  polionosUNIV[2].addListener("mouseover", mostrarInfo2);
+  polionosUNIV[2].addListener("mouseout", () => {
+    info.close();
+  });
+  polionosUNIV[3].addListener("mouseover", mostrarInfo3);
+  polionosUNIV[3].addListener("mouseout", () => {
+    info.close();
+  });
+  polionosUNIV[4].addListener("mouseover", mostrarInfo4);
+  polionosUNIV[4].addListener("mouseout", () => {
+    info.close();
+  });
+}
+var info;
 function mostrarInfo(event) {
   var contenido =
     "<h3>Universidad de Antioquia</h3>" +
@@ -200,7 +260,7 @@ function mostrarInfo(event) {
     content: contenido,
     position: event.latLng,
   };
-  var info = new google.maps.InfoWindow(opcionesInfo);
+  info = new google.maps.InfoWindow(opcionesInfo);
   info.open(map);
 }
 function mostrarInfo1(event) {
@@ -215,7 +275,7 @@ function mostrarInfo1(event) {
     content: contenido,
     position: event.latLng,
   };
-  var info = new google.maps.InfoWindow(opcionesInfo);
+  info = new google.maps.InfoWindow(opcionesInfo);
   info.open(map);
 }
 function mostrarInfo2(event) {
@@ -230,7 +290,7 @@ function mostrarInfo2(event) {
     content: contenido,
     position: event.latLng,
   };
-  var info = new google.maps.InfoWindow(opcionesInfo);
+  info = new google.maps.InfoWindow(opcionesInfo);
   info.open(map);
 }
 function mostrarInfo3(event) {
@@ -245,7 +305,7 @@ function mostrarInfo3(event) {
     content: contenido,
     position: event.latLng,
   };
-  var info = new google.maps.InfoWindow(opcionesInfo);
+  info = new google.maps.InfoWindow(opcionesInfo);
   info.open(map);
 }
 function mostrarInfo4(event) {
@@ -260,7 +320,7 @@ function mostrarInfo4(event) {
     content: contenido,
     position: event.latLng,
   };
-  var info = new google.maps.InfoWindow(opcionesInfo);
+  info = new google.maps.InfoWindow(opcionesInfo);
   info.open(map);
 }
 
