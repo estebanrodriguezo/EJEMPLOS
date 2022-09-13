@@ -99,7 +99,7 @@ function visualizarPosicion(position) {
   );
   var opcionesMapa = {
     center: coord,
-    zoom: 13,
+    zoom: 16,
     mapTypeId: google.maps.MapTypeId.HYBRID,
   };
   map = new google.maps.Map(mapa, opcionesMapa);
@@ -109,7 +109,7 @@ function visualizarPosicion(position) {
   var opcionesMarcador = {
     position: coord,
     map: map,
-    icon: "./marcadores/user.png",
+    icon: "./marcadores/user1.png",
     animation: google.maps.Animation.BOUNCE,
   };
   var marcaUsuario = new google.maps.Marker(opcionesMarcador);
@@ -128,26 +128,26 @@ function visualizarPosicion(position) {
 
   //Marcadores personalizados
   marcadores[0].setIcon({
-    url: "../logos/tdea.png",
+    url: "./logos/tdea.png",
     scaledSize: new google.maps.Size(40, 40),
   });
   marcadores[1].setIcon({
-    url: "../logos/udea.png",
+    url: "./logos/udea.png",
 
     scaledSize: new google.maps.Size(40, 40),
   });
   marcadores[2].setIcon({
-    url: "../logos/udm.png",
+    url: "./logos/udm.png",
 
     scaledSize: new google.maps.Size(40, 40),
   });
   marcadores[3].setIcon({
-    url: "../logos/eafit.png",
+    url: "./logos/eafit.png",
 
     scaledSize: new google.maps.Size(40, 40),
   });
   marcadores[4].setIcon({
-    url: "../logos/upb.png",
+    url: "./logos/upb.png",
 
     scaledSize: new google.maps.Size(40, 40),
   });
@@ -221,7 +221,6 @@ function visualizarPosicion(position) {
 
   //EVENTOS
 
-  
   polionosUNIV[0].addListener("mouseover", mostrarInfo);
   polionosUNIV[0].addListener("mouseout", () => {
     info.close();
@@ -229,29 +228,47 @@ function visualizarPosicion(position) {
   polionosUNIV[0].addListener(
     "dblclick",
     () => (window.location.href = "http://www.udea.edu.co")
-);
+  );
   polionosUNIV[1].addListener("mouseover", mostrarInfo1);
   polionosUNIV[1].addListener("mouseout", () => {
     info.close();
   });
+  polionosUNIV[1].addListener(
+    "dblclick",
+    () => (window.location.href = "https://udemedellin.edu.co/")
+  );
   polionosUNIV[2].addListener("mouseover", mostrarInfo2);
   polionosUNIV[2].addListener("mouseout", () => {
     info.close();
   });
+  polionosUNIV[2].addListener(
+    "dblclick",
+    () => (window.location.href = "https://www.upb.edu.co/es/home")
+  );
   polionosUNIV[3].addListener("mouseover", mostrarInfo3);
   polionosUNIV[3].addListener("mouseout", () => {
     info.close();
   });
+  polionosUNIV[3].addListener(
+    "dblclick",
+    () => (window.location.href = "https://www.eafit.edu.co")
+  );
   polionosUNIV[4].addListener("mouseover", mostrarInfo4);
   polionosUNIV[4].addListener("mouseout", () => {
     info.close();
   });
+  polionosUNIV[4].addListener(
+    "dblclick",
+    () => (window.location.href = "https://www.tdea.edu.co/")
+  );
 }
 var info;
 function mostrarInfo(event) {
   var contenido =
     "<h3>Universidad de Antioquia</h3>" +
-    "<p>Universidad publica ubicada en " +
+    "<img src=./logos/udeainfo.jpg width=20%></img>"
+    +
+    "<p>La Universidad de Antioquia es considerada como una de las mejores de todo el país. Desde su creación en 1803 ha brindado grandes aportes a la sociedad colombiana. Hoy en día esto se mantiene gracias a su variada oferta académica de calidad a todos los niveles de la educación superior. ,ubicada en " +
     event.latLng +
     "</p>" +
     "<p>sitio web <a href='http://www.udea.edu.co'>UdeA</a></p>";
@@ -266,7 +283,9 @@ function mostrarInfo(event) {
 function mostrarInfo1(event) {
   var contenido =
     "<h3>Universidad de Medellin</h3>" +
-    "<p>La Universidad de Medellín es una institución no oficial de educación superior, ubicada en " +
+    "<img src=./logos/udemInfo.jpg width=20%></img>"
+    +
+    "<p>La Universidad de Medellín (UDEM), es una prestigiosa institución de carácter privado, sin fines de lucro. La cual, cuenta con la inspección y vigilancia del Ministerio de Educación de Colombia, ubicada en " +
     event.latLng +
     "</p>" +
     "<p>sitio web <a href='https://udemedellin.edu.co/'>UdeM</a></p>";
@@ -281,7 +300,9 @@ function mostrarInfo1(event) {
 function mostrarInfo2(event) {
   var contenido =
     "<h3>Universidad Pontificia Bolivariana</h3>" +
-    "<p>Universidad privada ubicada en " +
+    "<img src=./logos/upbInfo.jpg width=20%></img>"
+    +
+    "<p>La Universidad Pontificia Bolivariana o UPB fue fundada en el año de 1936 por la jurisdicción eclesiástica Arquidiócesis de Medellín, siendo esta la primera Universidad Bolivariana de América Latina, actualmente su población estudiantil asciende a más de 25,823 alumnos en sus distintas facultades y sedes. Ademas se encuentra ubicada en " +
     event.latLng +
     "</p>" +
     "<p>sitio web <a href='https://www.upb.edu.co/es/home'>UPB</a></p>";
@@ -296,7 +317,10 @@ function mostrarInfo2(event) {
 function mostrarInfo3(event) {
   var contenido =
     "<h3>Universidad EAFIT</h3>" +
-    "<p>Universida privada ubicada en " +
+    "<img src=./logos/eafitInfo.jpg width=20%></img>"
+    +
+    "<p>La Universidad Eafit nace en 1960, como una universidad de carácter privada, inspirada en ideales educativos enfocados en valores de Libertad, Orden y Justicia.</p> " +
+    "<p>La Universidad Eafit en su propósito de contribuir al desarrollo sostenible de la humanidad, se proyecta en ser una universidad que inspira y transforma. Ubicada en:"+
     event.latLng +
     "</p>" +
     "<p>sitio web <a href='https://www.eafit.edu.co'>EAFIT</a></p>";
@@ -311,7 +335,9 @@ function mostrarInfo3(event) {
 function mostrarInfo4(event) {
   var contenido =
     "<h3>Tecnológico de Antioquia</h3>" +
-    "<p>Institución pública de educación superior dedicada principalmente a la formación técnica y tecnológica, ubicada en " +
+    "<img src=./logos/tdeaInfo.jpg width=20% ></img>"
+    +
+    "<p>La Institución Universitaria Tecnológico de Antioquia (TdeA) fue fundada en 1983 e inicio sus labores como una institución pública dedicada específicamente a la formación tecnológica. Sus principios fundamentales se basan en la responsabilidad social, el espíritu humanista y la construcción del conocimiento. Y  se encuentra ubicado en " +
     event.latLng +
     "</p>" +
     "<p>sitio web <a href='https://www.tdea.edu.co/'>TdeA</a></p>";

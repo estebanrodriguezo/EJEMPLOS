@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,55 +7,25 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/codigo.js" type="text/javascript" defer></script>
-    <script src="./js/Calculadora.js" type="text/javascript"></script>
-    <script src="./js/Display.js" type="text/javascript"></script>
+    
   </head>
 
   <body>
-    <div class="container">
-      <div class="calculadora">
-        <div class="display">
-          <div id="vAnterior"></div>
-          <div id="vActual"></div>
+    
+    <div class="calculadora">
+      <div class="calc-container">
+        <div class="output">
+          <div class="operation">
+            <div class="value"></div>
+          </div>
+          <div class="result">
+            <div class="value">0</div>
+          </div>
         </div>
-
-        <button name="rad">Rad</button>
-        <button class="deg">Deg</button>
-        <button class="factorial">x!</button>
-        <button id="abrir_p" class="fun">(</button>
-        <button id="cerrar_p" class="fun">)</button>
-        <button id="porcentaje" class="fun">%</button>
-        <button class="AC" onclick="display.borrarTodo()">AC</button>
-        <button id="inversa" class="fun">Inv</button>
-        <button id="seno" class="fun">sin</button>
-        <button id="logn" class="fun">ln</button>
-        <button id="siete" class="number">7</button>
-        <button id="ocho" class="number">8</button>
-        <button id="nueve" class="number">9</button>
-        <button id="division" class="fun" value="dividir">/</button>
-        <button id="pi" class="fun">π</button>
-        <button id="coseno" class="fun">cos</button>
-        <button id="log" class="fun">log</button>
-        <button id="cuatro" class="number">4</button>
-        <button id="cinco" class="number">5</button>
-        <button id="seis" class="number">6</button>
-        <button id="multiplicacion" class="fun" value="multiplicar">x</button>
-        <button id="euler" class="fun">e</button>
-        <button id="tangente" class="fun">tan</button>
-        <button id="raiz" class="fun">√</button>
-        <button id="uno" class="number">1</button>
-        <button id="dos" class="number">2</button>
-        <button id="tres" class="number">3</button>
-        <button id="resta" class="fun" value="restar">-</button>
-        <button id="resta" class="fun">Ans</button>
-        <button id="exp" class="fun">EXP</button>
-        <button id="potencia" class="fun" value="elevado">x<sup>y</sup></button>
-        <button id="cero" class="number">0</button>
-        <button id="punto">.</button>
-        <button id="igual" class="fun igual" value="igual">=</button>
-        <button id="suma" class="fun" value="sumar">+</button>
+        <div class="input"></div>
       </div>
     </div>
-
   </body>
+
+  
 </html>
