@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa de Universidades en Medellin</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <script src="./js/codigo.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js" defer></script>
+    <!-- <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js%22%3E "></script> -->
+  </head>
+
+  <body>
+    <h1>Gobernacion de Antioquia</h1>
+
+    <form class="selectUniv">
+      <h2>Universidades de Medellin</h2>
+      <p>
+        <input type="radio" name="univ" id="UDEA" /> Universidad de Antioquia <br />
+
+        <input type="radio" name="univ" id="UDEM"/> Universidad de Medellin <br />
+
+        <input type="radio" name="univ" id="UPB"/> Universidad Pontificia Bolivariana
+        <br />
+        <input type="radio" name="univ"id="TEC" /> Tecnologico de Antioquia <br />
+
+        <input type="radio" name="univ" id="EAFIT"/> Universidad EAFIT
+        <br />
+      </p>
+
+    </form>
+
+    <div class="carreras">
+
+      <div class="active" name="carrera">
+        <h2>Programas Ofrecidos</h2>
+        <ul>
+          <h3>Salud publica</h3>
+          <li>Medicina</li>
+          <li>Biología</li>
+          <li>Nutrición y Dietética</li>
+          <h3>Administración y Negocios</h3>
+          <li>Administración de Empresas</li>
+          <li>Contaduría Pública</li>
+          <h3>Ingeniería</h3>
+          <li>Ingeniería Electrónica</li>
+          <li>Ingeniería Mecánica</li>
+        <h4>Entre otros</h4>
+        </ul>
+      </div>  <!-- PROGRAMAS UDEA -->
+  
+
+      <div class="active" name="carrera">
+        <h2>Programas Ofrecidos</h2>
+        <ul>
+          <h3>Ciencias Sociales</h3>
+          <li>Ciencia Política</li>
+          <li>Comunicación Gráfica Publicitaria</li>
+          <li>Derecho</li>
+          <h3>Ciencias Exactas</h3>
+          <li>Computación Científica</li>
+          <li>Diseño y Gestión del Producto</li>
+          <h3>Ciencias Exactas</h3>
+          <li>Diseño y Gestión del Producto</li>
+          <li></li>
+        <h4>Entre otros</h4>
+        </ul>
+      </div>  <!-- PROGRAMAS UDEM -->
+
+
+
+      <div class="active" name="carrera">
+        <h2>Programas Ofrecidos</h2>
+        <ul>
+          <h3>Ingeniería</h3>
+          <li>Ingeniería Civil</li>
+          <li>Ingeniería Industrial</li>
+          <li>Ingeniería en Telecomunicaciones</li>
+          <h3>Administración y Negocios</h3>
+          <li>Mercadeo</li>
+          <li>Economía</li>
+          <h3>Ciencias Sociales</h3>
+          <li>Comunicación y Entrenamiento Digital</li>
+          <li>Investigación Criminal</li>
+        <h4>Entre otros</h4>
+        </ul>
+      </div>   <!-- PROGRAMAS UPB -->
+
+
+      <div class="active" name="carrera">
+        <h2>Programas Ofrecidos</h2>
+        <ul>
+          <h3>Ciencias Exactas</h3>
+          <li>Química</li>
+          <li>Física</li>
+          <li>Matemática</li>
+          <h3>Ciencias de la Salud</h3>
+          <li>Profesional en criminalística</li>
+          <li>Psicología</li>
+          <h3>Administración y Negocios</h3>
+          <li>Profesional en negocios internacionales</li>
+          <li>Técnica profesional en procesos de comercio exterior y logística por ciclos propedéuticos</li>
+        <h4>Entre otros</h4>
+        </ul>
+      </div>  <!-- PROGRAMAS TDEA -->
+
+
+      <div class="active" name="carrera">
+        <h2>Programas Ofrecidos</h2>
+        <ul>
+          <h3>Ingeniería</h3>
+          <li>Diseño Urbano y Gestión del Hábitat</li>
+          <li>Ingeniería Matemática</li>
+          <li>Ingeniería de Producción</li>
+          <h3>Arte</h3>
+          <li>Diseño Interactivo</li>
+          <li>Música</li>
+          <h3>Ciencias Exactas</h3>
+          <li>Biología</li>
+          <li>Geología</li>
+        <h4>Entre otros</h4>
+        </ul>
+      </div>  
+    </div>
+
+    <div id="mapa"></div> <br>
+
+  </body>
+</html>

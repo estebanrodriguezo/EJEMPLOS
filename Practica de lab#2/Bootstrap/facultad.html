@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facultad de Ingenieria</title>
+
+    <!--Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body>
+    <div class="container">
+        <!-- Cabecera -->
+        <header>
+
+            <!-- Menu de navegacion -->
+            <nav class="navbar fixed-top navbar-expand-md navbar-dark ">
+                <a href="./inicio.html" class="navbar-brand">UdeA</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div id="menu" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link" href="./inicio.html">INICIO</a></li>
+                        <li><a class="nav-link" href="./universidad.html">UNIVERSIDAD</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#">FACULTAD DE INGENIERIA </a></li>
+
+                    </ul>
+
+                    <form action="#" class="form-inline">
+                        <input class="form-control" type="search" name="buscar" placeholder="Buscar">
+                        <button class="btn btn-success" type="submit">Buscar</button>
+                    </form>
+
+
+
+
+                </div>
+            </nav>
+
+            <div class="clear"></div>
+
+        </header>
+        <!-- /Cabecera -->
+    </div><br><br><br>
+
+
+    <!-- Imagenes informativas  -->
+    <div class="container">
+
+        <strong><h1 class="text-success">Facultad de Ingenieria</h1></strong>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="carousel-main" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./IMG/Facultades/ing.png">
+
+                        </div>
+                        <div class="carousel-item"><img src="./IMG/Facultades/ing2.jpg"></div>
+                        <div class="carousel-item"><img src="./IMG/Facultades/ing3.png"></div>
+                        <div class="carousel-item"><img src="./IMG/Facultades/ing4.jpg"></div>
+                    </div>
+
+                    <a href="#carousel-main" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#carousel-main" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                    <ul class="carousel-indicators">
+                        <li data-target="#carousel-main" class="active" data-slide-to=0></li>
+                        <li data-target="#carousel-main" data-slide-to=1></li>
+                        <li data-target="#carousel-main" data-slide-to=2></li>
+                        <li data-target="#carousel-main" data-slide-to=3></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Imagenes informativas  -->
+
+
+    <!-- Tabla de cursos -->
+    <section class="container">
+
+        <table class="table table-hover table-responsive-xl ">
+
+
+            <tr class="table-success">
+
+                <th colspan="3">
+                    <strong><h3 class="title">Materias de Enfoque</h3></strong>
+                </th>
+
+            </tr>
+
+            <tr>
+
+                <th>
+
+                    <img class="img-thumbnail  rounded " src="./IMG/cursos/web.jpg">
+                  <em><h3>Desarrollo de aplicaciones WEB</h3></em>  
+                    <p class="text-justify"> El Desarrollo de Aplicaciones Web es aquel que permite crear herramientas
+                        a las que los usuarios pueden acceder a través de Internet. En la web podremos obtener
+                        información o interactuar con elementos que nos permitan la comunicación entre nosotros, los
+                        usuarios y la web.</p>
+                    <h2>Docente encargado</h2>
+                    <p>SEBASTIAN VILLA DUARTE</p>
+                    <h2>Horarios</h2>
+                    <p>L-S 8:00-10:00am</p>
+                    <a href="./curso.html"><button class="btn btn-warning">MAS INFORMACION</button></a>
+
+                </th>
+                <th>
+
+                    <img class="img-thumbnail  rounded " src="./IMG/cursos/redes.jpg">
+                    <em><h3>Redes de computadores</h3></em>
+                    <p class="text-justify"> Las redes de computadores, o renombradas hoy en día como Networks of Things
+                        , son esenciales para soportar los servicios de Internet que usamos a diario, dado que soportan
+                        la transformación digital de las empresas y apalancan de manera directa la revolución 4.0 que
+                        vivimos hoy en día.</p>
+                    <h2>Docente encargado</h2>
+                    <p>ERWIN ALEXANDER LEAL PIEDRAHITA</p>
+                    <h2>Horarios</h2>
+                    <p>M-J 6:00-8:00am</p>
+                    <a href="./curso.html"><button class="btn btn-warning">MAS INFORMACION</button></a>
+
+                </th>
+                <th>
+
+                    <img class="img-thumbnail rounded " src="./IMG/cursos/robotica.jpg">
+                    <em><h3>Robotica industrial</h3></em>
+                    <p class="text-justify"> La industria está viviendo un imparable proceso de automatización
+                        robotizada, lo que abre grandes posibilidades para los expertos de este sector puntero. El Curso
+                        Robótica Industrial te prepara para entrar en este campo como profesional altamente cualificado
+                        en lenguajes de programación textual, simuladores, componentes y sistemas. </p>
+                    <h2>Docente encargado</h2>
+                    <p>ANDRES PEREZ GONZALES</p>
+                    <h2>Horarios</h2>
+                    <p>M-J 2:00-4:00Pm</p>
+                    <a href="./curso.html"><button class="btn btn-warning">MAS INFORMACION</button></a>
+
+                </th>
+            </tr>
+
+
+
+            <tr class="table-success">
+
+                <th colspan="3">
+                    <strong><h3>Materias Electivas</h3></strong>
+                </th>
+
+            </tr>
+
+
+            <tr>
+
+                <th>
+
+                    <img class="img-thumbnail rounded " src="./IMG/cursos/moviles.png">
+                    <em><h3>Programacion de aplicaciones móviles</h3></em>
+                    <p class="text-justify"> Aprende las habilidades y conceptos básicos para crear aplicaciones para
+                        dispositivos móviles. Este curso te presenta los principios esenciales que deben inspirar la
+                        creación de estas aplicaciones, y así enfocar bien su diseño y programación desde el principio.
+                    </p>
+                    <h2>Docente encargado</h2>
+                    <p>EDWIN ANDRES CUBILLOS VEGA</p>
+                    <h2>Horarios</h2>
+                    <p>L-W 3:00-6:00 pm</p>
+                    <a href="./curso.html"><button class="btn btn-warning">MAS INFORMACION</button></a>
+
+                </th>
+                <th>
+
+                    <img class="img-thumbnail rounded " src="./IMG/cursos/emprendimiento.jpg">
+                    <em><h3>Emprendimiento</h3></em>
+                    <p class="text-justify"> En el Curso para Desarrollar Habilidades de Emprendimiento aprenderemos a
+                        comprender por qué la innovación es importante, qué es (y qué no es) y a descubrir como innovar
+                        en CUALQUIER contexto. Será parte de un desafío de innovación con el que obtendrá información
+                        valiosa sobre usuarios actuales y potenciales.
+                    </p>
+                    <h2>Docente encargado</h2>
+                    <p>MIGUEL FERNANDO TIRADO BUSTAMANTE</p>
+                    <h2>Horarios</h2>
+                    <p>L-W 3:00-6:00 pm</p>
+                    <a href="./curso.html"><button class="btn btn-warning">MAS INFORMACION</button></a>
+
+                </th>
+                <th>
+
+                    <img class="img-thumbnail rounded " src="./IMG/cursos/etica.jpg">
+                    <em><h3>Ética y responsabilidad social en la formacion del ingeniero</h3></em>
+                    <p class="text-justify"> Responsabilidad Social representan las acciones de los ingenieros para
+                        asumir su responsabilidad por los impactos que sus actividades tienen en la sociedad y el
+                        ambiente, las cuales deben ser consistentes con los intereses de la sociedad y el desarrollo
+                        sostenible; estar basadas en el cuidado ético y cumplimiento con las leyes aplicables e
+                        instrumentos intergubernamentales y estar integradas en las actividades cotidianas de la
+                        organización.
+                    </p>
+                    <h2>Docente encargado</h2>
+                    <p>YOLANDA CRISTINA CANO LOPERA</p>
+                    <h2>Horarios</h2>
+                    <p>M-J 4:00-6:00 pm</p>
+                    <a href="./curso.html"><button class="btn btn-warning">MAS INFORMACION</button></a>
+                </th>
+            </tr>
+
+
+
+            <tr class="table-success">
+
+                <th colspan="3">
+                    <strong><h3>Materias Basicas</h3></strong>
+                </th>
+
+            </tr>
+
+            <tr>
+
+                <th>
+
+                    <img class="img-thumbnail rounded " src="./IMG/cursos/calculo.jpg">
+                    <em><h3>Calculo diferencial</h3></em>
+                    <p class="text-justify"> El curso de cálculo diferencial tiene como propósito que el estudiante
+                        comprenda los conocimientos necesarios para poder efectuar y resolver problemas de funciones,
+                        límites y derivadas.
+                    </p>
+                    <h2>Docente encargado</h2>
+                    <p>CARLOS ANDRES BARRERA MONTOYA</p>
+                    <h2>Horarios</h2>
+                    <p>M-J 6:00-8:00 am</p>
+                    <a href="./curso.html"><button class="btn btn-warning">MAS INFORMACION</button></a>
+                </th>
+                <th>
+
+                    <img class="img-thumbnail rounded " src="./IMG/cursos/fisica.png">
+                    <em><h3>Fisica mecanica</h3></em>
+                    <p class="text-justify"> En el curso de física mecánica, se pretende fundamentar al participante en
+                        los conceptos y formalismos derivados las magnitudes físicas, cinemática, dinámica, trabajo,
+                        energía y principios de conservación.
+                    </p>
+                    <h2>Docente encargado</h2>
+                    <p>CARLOS ESTEBAN GARCIA GAVIRIA</p>
+                    <h2>Horarios</h2>
+                    <p>W-V 2:00-4:00 pm</p>
+                    <a href="./curso.html"><button class="btn btn-warning">MAS INFORMACION</button></a>
+                </th>
+                <th>
+
+                    <img class="img-thumbnail rounded " src="./IMG/cursos/algebra.jpg">
+                    <em><h3>Algebra lineal</h3></em>
+                    <p class="text-justify"> Es una rama de las Matemáticas basada en las propiedades de los conjuntos
+                        de espacios vectoriales, linealmente independientes. Las aplicaciones de esta rama permiten
+                        resolver múltiples problemas en las áreas de la Ingeniería principalmente; así como también
+                        tiene aplicaciones en Arquitectura, Contabilidad, Estudios Financieros, Astronomía, o Desarrollo
+                        y Programación.
+                    </p>
+                    <h2>Docente encargado</h2>
+                    <p>LUZ STELLA BOTERO RAMIREZ</p>
+                    <h2>Horarios</h2>
+                    <p>M-J 8:00-10:00 am</p>
+                    <a href="./curso.html"><button class="btn btn-warning">MAS INFORMACION</button></a>
+                </th>
+            </tr>
+
+
+        </table>
+
+    </section>
+    <!-- Tabla de cursos -->
+
+
+
+
+
+    <!-- Footer -->
+    <footer class=" text-center text-white">
+
+        <div class="container p-4">
+
+
+            <!-- SSocial media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://es-la.facebook.com/universidaddeantioquia/" role="button"><img src="./iconos/fb.png"
+                        class="iconsm" /></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://twitter.com/UdeA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    role="button"><img src="./iconos/tw.png" class="iconsm" /></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.udea.edu.co/wps/portal/udea/web/inicio/!ut/p/z1/hY7LDoIwEEW_xQVbOrSg4K5BYkDCIzERuzFgasEAJYDw-zbqxsTH7O7ccyaDGMoQa_OpEvlYyTavVT6y5SlKLc_ALoSxTzxInchKyNbH5oqgwz-AqRq-DAXlswdiOy42qAkh7AwLaOol0T52k02AX8CPGwFiopbF813aFsQWiPX8wnve67derctx7Ia1BhrM86wLKUXN9bNsNPiklHIYUfZOoq7J4GrVU0gXizthmbDl/dz/d5/L2dBISEvZ0FBIS9nQSEh/"
+                    role="button"><img src="./iconos/google.png" class="iconsm" /></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/udea/?hl=es"
+                    role="button"><img src="./iconos/insta.png" class="iconsm" /></i></a>
+
+                </a>
+            </section>
+            <!--Social media -->
+
+            <!-- Text -->
+            <section class="mb-4 text-center">
+                <p>
+                    Universidad de Antioquia | Vigilada Mineducación | Acreditación institucional hasta el 2022 | NIT
+                    890980040-8
+                    Recepción de correspondencia: calle 70 No. 52 - 21 | Apartado Aéreo 1226 | Dirección: calle 67 No.
+                    53 - 108 | Horario de atención
+                    Conmutador: [57 + 604] 219 8332 | Línea gratuita de atención al ciudadano: 018000 416384 | Fax: [57
+                    + 604] 263 8282
+
+                </p>
+            </section>
+            <!--Text -->
+
+            <!--  Links -->
+            <section class="">
+                <!--row-->
+                <div class="row">
+                    <!--column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Atención al ciudadano</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/atencion-ciudadano/canales-atencion/telefonica"
+                                    class="text-white tex">Directorio telefónico</a>
+                            </li>
+                            <li>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/acerca-udea"
+                                    class="text-white">Normativa</a>
+                            </li>
+                            <li>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/atencion-ciudadano/canales-atencion/presencial"
+                                    class="text-white">Atención presencial</a>
+                            </li>
+                            <li>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/atencion-ciudadano/tramites-servicios"
+                                    class="text-white">Trámites y servicios</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--column-->
+
+                    <!-- column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Servicios en línea</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://www.udea.edu.co/wps/myportal/udea/web/inicio/somos-udea/egresados/tramites-solicitudes/actualiza-datos"
+                                    class="text-white">Actualizar datos de egresados</a>
+                            </li>
+                            <li>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/somos-udea/profesores/aspirantes-docente-catedra"
+                                    class="text-white">Aspirantes a docente de cátedra</a>
+                            </li>
+                            <li>
+                                <a href="https://udearroba.udea.edu.co/home/" class="text-white">Ude@ educación
+                                    virtual</a>
+                            </li>
+                            <li>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/verificacion-actas-diplomas-grado"
+                                    class="text-white">Verificación y consulta de diplomas y actas de grado</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--column-->
+
+                    <!--column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">La UdeA nos conecta</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/medios"
+                                    class="text-white">Medios UdeA</a>
+                            </li>
+                            <li>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/medios/periodico-alma-mater"
+                                    class="text-white">Periódico Alma Mater</a>
+                            </li>
+                            <li>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/medios/experimenta"
+                                    class="text-white">Revista Experimenta</a>
+                            </li>
+                            <li>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/emisora-cultural"
+                                    class="text-white">Emisora Cultura UdeA</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--column-->
+
+                    <!--column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Estudiar en la UdeA</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/estudiar-udea/quiero-estudiar-udea/pregrado"
+                                    class="text-white">Pregrado</a>
+                            </li>
+                            <li>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/estudiar-udea/quiero-estudiar-udea/posgrado"
+                                    class="text-white">Posgrado</a>
+                            </li>
+                            <li>
+                                <a href="https://udearroba.udea.edu.co/" class="text-white">Ude@ Educación virtual</a>
+                            </li>
+                            <li>
+                                <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/estudiar-udea/educacion-continua"
+                                    class="text-white">Educación continua</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--column-->
+                </div>
+                <!-- row-->
+            </section>
+            <!-- Links -->
+
+        </div>
+        <!-- container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white"
+                href="https://www.udea.edu.co/wps/portal/udea/web/inicio/!ut/p/z1/hY7LDoIwEEW_xQVbOrSg4K5BYkDCIzERuzFgasEAJYDw-zbqxsTH7O7ccyaDGMoQa_OpEvlYyTavVT6y5SlKLc_ALoSxTzxInchKyNbH5oqgwz-AqRq-DAXlswdiOy42qAkh7AwLaOol0T52k02AX8CPGwFiopbF813aFsQWiPX8wnve67derctx7Ia1BhrM86wLKUXN9bNsNPiklHIYUfZOoq7J4GrVU0gXizthmbDl/dz/d5/L2dBISEvZ0FBIS9nQSEh/">www.udea.edu.co</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+</body>
+
+</html>

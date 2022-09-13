@@ -1,0 +1,177 @@
+* {
+	/*border: 1px solid red;*/
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	padding: 10px;
+	background: #F1F1F1;
+}
+
+header {
+	padding: 30px;
+	background-image: url("img/fondo.jpg");
+	background-color: #00A0A0;
+	text-align: center;
+}
+
+header h1, header h2 {
+	color: white;
+	font-size: 2em;
+	text-shadow: 3px 3px black;
+}
+
+header h2 {
+	font-size: 1.5em;
+}
+
+nav li {
+	display: inline;
+	width: 150px;
+	margin: auto;
+	background-color: #0259A8;
+	text-align: left;
+}
+
+nav li:hover {
+	background-color: #F2F2F2;
+	font-weight: bold;
+	color: black;
+}
+
+nav a {
+	color: #F2F2F2;
+}
+
+nav a:hover {
+	color: black;
+}
+
+nav a:before {
+	content: url(img/burn.png);
+	margin: 4px;
+}
+
+.float-left {
+	float: left;
+	width: 74%;
+}
+
+.float-right {
+	float: right;
+	width: 25%;
+}
+
+.card {
+	background-color: white;
+	padding: 20px;
+	margin: 10px;
+}
+
+p.float-left-3 {
+	margin: 1%;
+	padding: 20px;
+	float: left;
+	width: 31%;
+}
+
+p.float-left-2 {
+	margin: 1%;
+	padding: 20px;
+	float: left;
+	width: 48%;
+}
+
+p:first-line{
+	font-weight: bold;
+}
+
+p:first-letter {
+	font-size: 30px;
+}
+
+div.clear{
+	clear: both;
+}
+
+img {
+	display: block;
+	box-shadow: 5px 5px 5px gray;
+	width: 30%;
+	margin: auto;
+	transition: 1s;
+}
+
+img:hover {
+	transform: scale(1.2) skew(10deg);
+}
+
+.img-circle {
+	width: 70%;
+	border-radius: 50%;
+	transition: 3s 1s;
+}
+
+.img-circle:hover {
+	filter: sepia(100%) blur(3px);
+	transform: rotate(360deg) scale(1.5);	
+}
+
+#check-menu, .menu {
+	display: none;
+}
+
+@media screen and (max-width: 700px) {
+	p.float-left-3, p.float-left-2 {
+		width: 100%;
+	}
+
+	nav li {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.float-left, .float-right {
+		width: 100%;
+	} 
+
+	.img-circle {
+		width: 50%;
+	}
+
+	.nueva {
+
+	}
+
+	#check-menu:checked ~ nav{
+		display: block;
+	}
+
+	nav {
+		display: none;
+		position: fixed;
+		top: 50px;
+		left: -20px;
+		transition: 2s;
+	}
+
+	.menu {
+		display: block;
+		position: fixed;
+		top: 20px;
+		left: 20px;
+	}
+
+	.img-menu {
+		background-color: white;
+		width: 50px;
+	}
+
+	.img-menu:hover {
+		cursor: pointer;
+		transform: skew(0deg);
+	}
+}
+

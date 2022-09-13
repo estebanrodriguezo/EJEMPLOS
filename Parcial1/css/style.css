@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./img/fondo.jpg");
+  padding-top: 1%;
+  padding-bottom: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.page {
+  background-color: white;
+  border-radius: 9px;
+  margin-bottom: 2%;
+  float: left;
+  width: 100%;
+}
+.jumbotron {
+  margin: 0%;
+  padding-top: 1.5%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.topmenu {
+  width: 40%;
+  padding: 0.5%;
+  float: right;
+  list-style-type: none;
+  margin-top: 0.5cm;
+  margin-right: 1%;
+}
+
+.topmenu li {
+  display: inline;
+  width: 100%;
+  padding: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: large;
+  border-radius: 10px;
+  background-color: rgba(29, 29, 225, 0.492);
+  margin-left: -0.9%;
+}
+.topmenu a {
+  color: white;
+}
+
+.bluebox {
+  width: 96%;
+  margin-right: 2%;
+  float: right;
+  border: 1px solid rgba(0, 0, 0, 0.373);
+}
+.greybox {
+  color: gray;
+  width: 96%;
+  margin-right: 2%;
+  float: right;
+  border: 1px solid rgba(0, 0, 0, 0.373);
+}
+
+#principal {
+  float: left;
+  width: 35%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 1%;
+}
+.right {
+  width: 60%;
+  float: right;
+  margin-left: 2%;
+}
+.active {
+  display: none;
+}
+#secundaria {
+  width: 20%;
+  margin-top: 2%;
+  margin-right: 10%;
+}
+
+.lightBlueBg {
+  background-color: rgba(0, 165, 165, 0.095);
+}
+footer {
+  color: gray;
+  padding: 2%;
+  text-align: center;
+  float: left;
+  width: 100%;
+}
+footer a {
+  color: gray;
+}
